@@ -46,18 +46,20 @@
 
 \begin{document}
 \begin{center}
-  Temporary Trade Barriers: How Long Do They Last?
+  Temporary Trade Barriers: How Long Do They Last?\\
+	Kristy Buzard
 \end{center}
 
 \vskip.2in
-Today's world trading system is largely governed by a system in which countries commit to tariff bindings and yet raise their tariffs above those bindings through a variety of temporary trade barriers (TTBs) on a not-infrequent basis (Bown 2011). A significant literature has explored the question of which industries receive protection through TTBs and under what conditions. This project asks a related but distinct question: given that a product receives protection, what detrmines the length of that protection?
+Today's world trading system is largely governed by a system in which countries commit to tariff bindings and yet raise their tariffs above those bindings through a variety of temporary trade barriers (TTBs) on a not-infrequent basis (Bown 2011). A significant literature has explored the question of which industries receive protection through TTBs and under what conditions. This project asks a related but distinct question: given that a product receives protection, what determines the length of that protection? \\
+
+This question can be addressed in the context of renewals of trade remedies under the WTO agreements. Normally, temporary measures such as anti-dumping and counter-vailing duties have a five-year sunset provision that is subject to renewal by the U.S. International Trade Commission. Conditional on a TTB being granted and applied for five years, one would like to know what determines whether a renewal order is granted so that it continues in force.
+
+The continued imposition of a TTB is not in general costless. We might assume then, that the International Trade Commission (ITC) only grants renewals when it finds the benefits outweigh the costs. 
 
 \vskip.3in
-Need to motivate question
 \begin{itemize}
-	\item How long do deviations from trade agreement tariffs last? What are the determinants of these deviations?
 	\item If lobbies have to exert effort to achieve higher-than-MFN tariffs, when will it be worthwhile for them to do so?
-	\item Whether it's a dispute or it's a measure (what does Chad call these?) like AD or escape clause that has not been disputed, it won't be granted for no reason
 \end{itemize}
 
 \vskip.3in
@@ -91,6 +93,27 @@ Main idea: adapt SOP model to predict whether anti-dumping measures get renewed
 \end{itemize}
 
 \vskip.5in
+Median Legislator's Condition
+\begin{itemize}
+	\item I believe I have to change the legislature's condition to be more like the cheater's payoff for this context
+		\[
+		  W_{ML}\left( \tau^{AD},\tau^{*a},\ga(e,\ta)\right) > W_{ML}\left( \bta,\ga(e,\ta)\right)
+		\]
+		\begin{itemize}
+			\item Need to make sure this is not always the case.
+				\begin{itemize}
+					\item Median legislator still has to balance (weighted) producers and consumers.
+					\item If $\ga = 1$, would pick optimal tariff.
+					\item If $\ga$ is so low that $\tau^N < \tau^a$, then agreement will hold. If $\tau^a < \tau^{AD} < \tau^{AD}$, depends on which is closer in welfare terms 
+				\end{itemize}
+			\item Seems to work okay in Matlab example: just pushes up break probability, trade agreement tariff; reduces gamma and effort (``SOP$\_$example.m'')
+			\item Need to check exec's SOC
+		\end{itemize}
+	\item There could also be uncertainty about the probability that foreign will dispute the AD measure; that could change from the original to the renewal
+\end{itemize}
+
+
+\vskip.5in
 Possible cross-industry variation
 \begin{itemize}
 	\item Lobby facing same uncertainty, behaving in same manner may get different outcome in the two draws (five years apart)
@@ -109,26 +132,6 @@ Possible cross-industry variation
 				\end{itemize}
 		\end{itemize}
 	\item Uncertainty could change, so behavior would change (this would be hard to pick up in the data that I have)
-\end{itemize}
-
-\vskip.5in
-Median Legislator's Condition
-\begin{itemize}
-	\item I believe I have to change the legislature's condition to be more like the cheater's payoff for this context
-		\[
-		  W_{ML}\left( \tau^{AD},\tau^{*a},\ga(e,\ta)\right) > W_{ML}\left( \bta,\ga(e,\ta)\right)
-		\]
-		\begin{itemize}
-			\item Need to make sure this is not always the case.
-				\begin{itemize}
-					\item Median legislator still has to balance (weighted) producers and consumers.
-					\item If $\ga = 1$, would pick optimal tariff.
-					\item If $\ga$ is so low that $\tau^N < \tau^a$, then agreement will hold. If $\tau^a < \tau^{AD} < \tau^{AD}$, depends on which is closer in welfare terms 
-				\end{itemize}
-			\item Seems to work okay in Matlab example: just pushes up break probability, trade agreement tariff; reduces gamma and effort (``SOP$\_$example.m'')
-			\item Need to check exec's SOC
-		\end{itemize}
-	\item There could also be uncertainty about the probability that foreign will dispute the AD measure; that could change from the original to the renewal
 \end{itemize}
 
 \newpage
