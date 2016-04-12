@@ -106,7 +106,7 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 \begin{itemize}
 	\item I believe I have to change the legislature's condition to be more like the cheater's payoff for this context
 		\[
-		  W_{ML}\left( \tau^{AD},\tau^{*a},\ga(e,\ta)\right) > W_{ML}\left( \bta,\ga(e,\ta)\right)
+		  W\left( \tau^{AD},\tau^{*a},\ga(e,\ta)\right) > W\left( \bta,\ga(e,\ta)\right)
 		\]
 		\begin{itemize}
 			\item Need to make sure this is not always the case.
@@ -150,7 +150,37 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 
 \newpage
 \section{Model}
-What are the \textit{essential} insights I want to capture?
+What are the \textit{essential} insights/predictions I want to capture?
+\begin{enumerate}
+	\item uncertainty about ITC's preferences impacts lobby's incentives to exert effort
+	\item cross-industry variation in whether AD duties are renewed
+\end{enumerate}
+
+\vskip.2in
+Do I need two stages? What happens with only one stage?
+\begin{enumerate}
+	\item Given $\tau^{AD}$, lobby chooses $e$
+	\item $\ta$ realized
+	\item ITC decides between $\tau^{AD}$ and $\tau^a$ using
+	  \[
+		  W\left(\ga(e,\ta), \tau^{AD},\tau^{*a}\right) > W\left(\ga(e,\ta), \tau^a, \tau^{*a}\right)
+		\]
+\end{enumerate}
+
+\vskip.2in
+This is simple because there's only one lobby, action in only one country
+\begin{itemize}
+	\item Although there may be pressure from foreign
+	\item Or in a three-country model: third country benefits from discrimination against foreign $\left( * \right)$
+\end{itemize}
+
+\vskip1in
+Next steps:
+\begin{enumerate}
+	\item Check BS GE model
+	\item Check on how results from JMP would translate given no punishments
+	\item How do I make this vary across industry? $\pi$ function, $\ga$, $\ta$, $\tau^a$, $\tau^{AD}$
+\end{enumerate}
 
 \newpage
 \section{Chad and Maurizio's project}
