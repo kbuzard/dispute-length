@@ -61,7 +61,7 @@ Need to motivate question
 \begin{itemize}
 	\item How long do deviations from trade agreement tariffs last? What are the determinants of these deviations?
 	\item If lobbies have to exert effort to achieve higher-than-MFN tariffs, when will it be worthwhile for them to do so?
-	\item Whether it's a dispute or it's a measure (what does Chad call these?) like AD or escape clause that has not been disputed, it won't be granted for no reason
+	\item Whether it's a dispute or it's a temporary trade barrier (TTB) like AD or escape clause that has not been disputed, it won't be granted for no reason
 \end{itemize}
 
 \vskip.3in
@@ -75,24 +75,23 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 	\item When is it worth it for lobby to exert effort to renew AD measure?
 	\item Lobby must be able to trigger the AD measure in the first place
 		\begin{itemize}
-			\item This means disputes/non-adherence to MFN tariffs must happen on the equilibrium path
-			\item Need uncertainty, asymmetric information, something
+			\item This means disputes/non-adherence to MFN tariffs must happen on eqm path
 			\item In my model, it is symmetric political uncertainty about how ITC will rule. Why would there be uncertainty?
 				\begin{itemize}
-					\item Directly about strength of evidence? (indirectly about retaliation / dispute)
+					\item Directly about strength of evidence? (indirectly about retaliation / dispute?)
 					\item Differential valuation about harm to industry---how central the industry is, how politically powerful
 					\item \textbf{Q}: What are all the factors that have weight in ITCs decision-making? Are they influenced by other political factors?
-					\item Does Congressional uncertainty transfer over to ITC uncertainty?
+					\item Does Congressional uncertainty transfer over to ITC uncertainty? NEED to argue that it does if we're going to use the political uncertainty data that I'm generating
 				\end{itemize}
 		\end{itemize}
-	\item In this setup, need ``dispute'' to last for 5 periods (years)
+	\item In this setup, need ``dispute'' to last for 5 periods (years); 4 for safeguard
 		\begin{itemize}
 			\item Then can extend it.
 			\item \textbf{Q}: for five more years?
 		\end{itemize}
 	\item Why would there be variation in one lobby's incentives between $t=1$ (original application of AD) and $t=6$ when it comes up for renewal?
 		\begin{itemize}
-			\item Uncertainty could be an answer, \textit{and} it varies across industry
+			\item Political uncertainty could be an answer, \textit{and} it varies across industry
 			\item \textbf{Q}: Is this a plausible story?
 		\end{itemize}
 	\item Also have to adapt model to cross-industry to get necessary variation
@@ -131,14 +130,18 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 	\item Lobby facing same uncertainty, behaving in same manner may get different outcome in the two draws (five years apart)
 		\begin{itemize}
 			\item In first round, $\tau^{AD}$ is endogenous. It's exogenous in second round of play.
+			\item \textbf{Q}: Is it really exogenous? What does data say about whether renewals are at same level as original TTB?
 		\end{itemize}
-	\item Industry / lobby gets richer / more insulated for five years
+	\item Industry / lobby gets richer / more insulated for five years (or poorer if not insulated enough)
 		\begin{itemize}
 			\item This could lead to differences in budget constraint if that were in model
-			\item May not need budget constraint if extra budget allows them to invest in technology
+			\item May not need budget constraint if extra budget allows them to invest in technology or politics
 				\begin{itemize}
 					\item Come to question of whether protection and technological upgrading are complements or substitutes
 					\item Lobbies that have more to gain have more opportunity to \textit{either} gather strength to become more competitive \textit{or} become more politically powerful to seek more protection
+						\begin{itemize}
+							\item Is there an incentive to \textit{not} get stronger technologically?
+						\end{itemize}
 					\item Perhaps some cross-industry measure of restraints on political strategy that would push toward substituting to technological
 				\end{itemize}
 			\item This could lead to differences in ability to deal with technological gap with foreign competitors 
@@ -148,10 +151,15 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 		\end{itemize}
 	\item Even if AD economic conditions can't be measured / don't bind, doesn't mean that real economic conditions don't play into ITC's decision-making process
 	\item Uncertainty could change, so behavior would change (this would be hard to pick up in the data that I have)
+		\begin{itemize}
+			\item If the dist'n doesn't change, only the outcome, I'd just be observing draws from the same distribution, driven by same behavior.
+			\item I guess this is something I want to be able to tease apart? \textit{If} uncertainty plays an important role, is it just the outcome that's changing, or the underlying uncertainty and thus the behavior?
+			\item Can I get at this with the data I have (i.e. \textit{will} have, shortly)?
+		\end{itemize}
 \end{itemize}
 
 
-\newpage
+\vskip1in
 \section{Model}
 What are the \textit{essential} insights/predictions I want to capture?
 \begin{enumerate}
@@ -162,7 +170,7 @@ What are the \textit{essential} insights/predictions I want to capture?
 \vskip.2in
 Do I need two stages? What happens with only one stage?
 \begin{enumerate}
-	\item Given $\tau^{AD}$, lobby chooses $e$
+	\item Given $\tau^{AD}$, lobby chooses $e$ given the dist'n of $\ta$
 	\item $\ta$ realized
 	\item ITC decides between $\tau^{AD}$ and $\tau^a$ using
 	  \[
@@ -186,6 +194,7 @@ Notes
 \vskip1in
 Next steps:
 \begin{enumerate}
+	\item Email Chad with questions
 	\item How do I make this vary across industry? $\pi$ function, $\ga$, $\ta$, $\tau^a$, $\tau^{AD}$
 \end{enumerate}
 
