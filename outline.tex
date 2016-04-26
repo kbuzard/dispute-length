@@ -116,7 +116,7 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 					\item If $\ga$ is so low that $\tau^N < \tau^a$, then agreement will hold. If $\tau^a < \tau^N < \tau^{AD}$, depends on which is closer in welfare terms 
 				\end{itemize}
 			\item Seems to work okay in Matlab example: just pushes up break probability, trade agreement tariff; reduces gamma and effort (``SOP$\_$example.m'')
-			\item Need to check exec's SOC
+			\item Exec's SOC doesn't matter: going to take $\bta$ as given. But need to worry about lobby and leg SOCs. I've convinced myself that the relevant results from my JMP go through for this objective function, so SOCs go through too (given the right assumptions to get concavity for leg, or possibly the argumentation from trade war section supplied by RoIE editor)
 		\end{itemize}
 	\item There could also be uncertainty about the probability that foreign will dispute the AD measure; that could change from the original to the renewal
 		\begin{itemize}
@@ -177,11 +177,15 @@ This is simple because there's only one lobby, action in only one country
 	\item Or in a three-country model: third country benefits from discrimination against foreign $\left( * \right)$
 \end{itemize}
 
+\vskip.5in
+Notes
+\begin{enumerate}
+	\item I don't think a more general model like BS1999 will work; I need to be able to pick apart the elements of the welfare function to separate out $\ga(e,\ta)$ in order to do my proofs
+\end{enumerate}
+
 \vskip1in
 Next steps:
 \begin{enumerate}
-	\item Check BS GE model
-	\item Check on how results from JMP would translate given no punishments
 	\item How do I make this vary across industry? $\pi$ function, $\ga$, $\ta$, $\tau^a$, $\tau^{AD}$
 \end{enumerate}
 
