@@ -71,6 +71,7 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 	\item Note that this is not trade war: foreign is applying $\tau^{*a}$ in most / all cases
 		\begin{itemize}
 			\item \textbf{Q}: Are all cases of renewal ones of no punishment, i.e. target country is applying MFN tariff?
+			\item I'm going to go with this for now, given Chad's answer that Safeguards are usually not renewed b/c retaliation is authorized after three years
 		\end{itemize}
 	\item When is it worth it for lobby to exert effort to renew AD measure?
 	\item Lobby must be able to trigger the AD measure in the first place
@@ -95,6 +96,7 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 		\begin{itemize}
 			\item Political uncertainty could be an answer, \textit{and} it varies across industry
 			\item \textbf{Q}: Is this a plausible story?
+			\item In current, simple model, this doesn't matter. I only look at $t=6$ decision, but cross industry
 		\end{itemize}
 	\item Also have to adapt model to cross-industry to get necessary variation
 		\begin{itemize}
@@ -103,9 +105,9 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 \end{itemize}
 
 \vskip.5in
-\section{Median Legislator's Condition}
+\section{Decision-maker's Condition}
 \begin{itemize}
-	\item I believe I have to change the legislature's condition to be more like the cheater's payoff for this context
+	\item Have to change the legislature's condition to be more like the cheater's payoff for this context
 		\[
 		  W\left( \tau^{AD},\tau^{*a},\ga(e,\ta)\right) > W\left( \bta,\ga(e,\ta)\right)
 		\]
@@ -117,11 +119,15 @@ Adapt SOP model to predict whether anti-dumping measures get renewed
 					\item If $\ga$ is so low that $\tau^N < \tau^a$, then agreement will hold. If $\tau^a < \tau^N < \tau^{AD}$, depends on which is closer in welfare terms 
 				\end{itemize}
 			\item Seems to work okay in Matlab example: just pushes up break probability, trade agreement tariff; reduces gamma and effort (``SOP$\_$example.m'')
+				\begin{itemize}
+					\item Makes sense: ITC/DOC doesn't get to set $\bta$ here. Just makes break decision given $\bta$ and $\btn$, where $\btn$ is AD duty, not actually Nash tariff
+				\end{itemize}
 			\item Exec's SOC doesn't matter: going to take $\bta$ as given. But need to worry about lobby and leg SOCs. I've convinced myself that the relevant results from my JMP go through for this objective function, so SOCs go through too (given the right assumptions to get concavity for leg, or possibly the argumentation from trade war section supplied by RoIE editor)
 		\end{itemize}
 	\item There could also be uncertainty about the probability that foreign will dispute the AD measure; that could change from the original to the renewal
 		\begin{itemize}
 			\item Could reduce form this, or not
+			\item This is reduced significantly; up until 2008, only four disputes over sunset reviews according to Chad's 2008 WTR
 		\end{itemize}
 \end{itemize}
 
@@ -201,7 +207,6 @@ Notes
 \vskip1in
 Next steps:
 \begin{enumerate}
-	\item Email Chad with questions
 	\item How do I make this vary across industry? $\pi$ function, $\ga$, $\ta$, $\tau^a$, $\tau^{AD}$
 \end{enumerate}
 
