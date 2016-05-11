@@ -272,17 +272,15 @@ $$W_E = \mathit{CS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \ga_E \pi_X(\tau) + \pi_Y(
 \frametitle{Lobby}
 \vskip.2in
 Lobby chooses effort to maximize:
-\begin{multline*}
-  \left\{1-\Pr\left[ \text{TradeWar}(e_b,\bta)\right]\right\} \ \pi(\tau^a) \\
-     + \Pr\left[ \text{TradeWar}(e_b,\bta) \right] \left[ \pi(\tau^{\mathit{tw}}) - e_{tw} \right] - e_b
-\end{multline*}
+\[
+  \left\{1-\Pr\left[ \text{AD Renewal}\right]\right\} \ \pi(\tau^a) + \Pr\left[ \text{AD Renewal} \right]  \pi(\tau^{\mathit{ad}})  - e
+\]
 
-\vskip.2in
+\vskip.1in
 \begin{itemize}
-	\item $e_b$: Lobbying effort for break decision
-	\item $e_{tw}$: Lobbying effort for trade-war tariffs
-	\item $(\tau^a,\tau^{*a})$: trade agreement tariffs
-	\item $\tau^{\textit{ad}}$: tariff equivalent under anti-dumping duties
+	\item $e$: Lobbying effort
+	\item $\tau^a$: home import tariff under trade agreement
+	\item $\tau^{\textit{ad}}$: home import tariff equivalent under anti-dumping duties
 \end{itemize}
 
 \end{frame}
@@ -315,7 +313,7 @@ Lobby chooses effort to maximize:
 \textbf{Legislature}
 \pause
 \begin{itemize}
-	\item Breaks agreement if median legislator prefers $\bm{\tau^{\mathit{tw}}}$ to $\bta$
+	\item Breaks agreement if median legislator prefers $\tau^{\mathit{ad}}$ to $\tau^a$
 \end{itemize}
 
 \pause
@@ -323,8 +321,8 @@ Lobby chooses effort to maximize:
 \textbf{Lobby}
 \pause
 \begin{itemize}[<+->]
-	\item Given the $\bta$ it faces, lobby knows what $e_b$ is required to break the agreement
- 	\item Lobby pays this $e_b$ if: \hskip.2in $\bm{\pi}(\bm{\tau^{\mathit{tw}}}) \bm{- e_{tw}  - e_b > \pi}(\bm{\tau^a})$
+	\item Given the $(\tau^a,\tau^{*a})$ it faces, lobby knows what $e_b$ is required to break the agreement
+ 	\item Lobby pays this $e_b$ if: \hskip.2in $\pi(\tau^{\mathit{tw}}) - e > \pi(\tau^a)$
 \end{itemize}
 
 \pause
@@ -332,7 +330,7 @@ Lobby chooses effort to maximize:
 \textbf{Executives}
 \pause
 \begin{itemize}[<+->]
-	\item Set $\bta$ to make paying $e_b$ unprofitable
+	\item Set $(\tau^a,\tau^{*a})$ to make paying $e_b$ unprofitable
 		\begin{itemize}
 			\item[$\Rightarrow$] $e_b=0$, agreement remains in force
 		\end{itemize}
@@ -392,7 +390,7 @@ An Example (Bagwell $\&$ Staiger 2005)
   Probability that Legislature breaks agreement: \\
 	\pause
   \vskip.1in
-    $b(e_b,\bta,\btn,\ta)$ probability median legislator prefers $\tau^{tw}$ to $\tau^a$ for a given $\ta$
+    $b(e,\tau^a,\tau^{*a},\tau^{\textit{ad}},\ta)$ probability median legislator prefers $\tau^{tw}$ to $\tau^a$ for a given $\ta$
 \end{frame}
 
 
