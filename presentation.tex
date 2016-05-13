@@ -271,7 +271,7 @@ Lobby chooses effort to maximize:
 
 \begin{frame}{Why uncertainty?}
 \pause
-\textbf{Legislature}
+\textbf{Government}
 \pause
 \begin{itemize}
 	\item Renews AD duties if $G$ prefers $\tau^{\mathit{ad}}$ to $\tau^a$
@@ -310,17 +310,65 @@ Lobby chooses effort to maximize:
 
 
 \begin{frame}{Government}
-  $G$ breaks trade agreement if its utility is higher under AD duties than trade agreement tariff
+  $G$ renews AD duties if its utility is higher under AD duties than trade agreement tariff
   \begin{itemize}
-		\item Preferences are uncertain through $\ta$
-	\end{itemize}
-	
-	\pause
-  \vskip.2in
-  Probability that $G$ breaks agreement: \\
+		\item Preferences are ex-ante uncertain through $\ta$
+		\pause
+		\item When does $G$ renew AD duties? \\
 	\pause
   \vskip.1in
-    $b(e,\tau^a,\tau^{*a},\tau^{\textit{ad}},\ta)$ probability median legislator prefers $\tau^{ad}$ to $\tau^a$ for a given $\ta$ and $e$
+    $b(e,\tau^a,\tau^{\textit{ad}})$: probability $G$ prefers $\tau^{ad}$ to $\tau^a$ for a given effort level $e$
+\end{itemize}
+
+\pause
+\vskip.25in
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Lemma 1}
+  The probability that $G$ renews AD duties is increasing and concave in lobbying effort $e$ $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
+\end{beamerboxesrounded}
+
+\end{frame}
+
+\begin{frame}{Home's Trade Agreement Tariff}
+
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Result 1}
+  The total probability that $G$ renews AD duties is decreasing in the home trade agreement tariff $\tau^a$.
+\end{beamerboxesrounded}
+
+\vskip.25in
+There's both a direct effect and an indirect effect through lobby's incentives, and both are negative:
+\[
+  \frac{\partial b}{\partial e} \frac{\partial e}{\partial \tau^a} + \frac{\partial b}{\partial \tau^a}
+\]
+\end{frame}
+
+\begin{frame}{Foreign's Trade Agreement Tariff}
+
+Assuming trading partner does not retaliate
+\begin{itemize}
+	\item No difference in foreign tariff under AD duty and $\tau^a$. So no effect on $G$'s incentives (either direct or indirect)
+\end{itemize}
+
+
+\vskip.25in
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Result 2}
+  The total probability that $G$ renews AD duties is unaffected by foreign's trade agreement tariff $\tau^a$.
+\end{beamerboxesrounded}
+\end{frame}
+
+
+\begin{frame}{Profitability of Import-Competing Sector}
+
+Assume $\pi(\cdot)$ shifts up uniformly for all $\tau$.
+\begin{itemize}
+	\item Convexity of profits $\Rightarrow$ $G$'s marginal benefit of providing protection goes up
+	\item Convexity of profits $\Rightarrow$ return from lobbying increases
+\end{itemize}
+
+
+\vskip.25in
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Result 3}
+  The total probability that $G$ renews AD duties is increasing in the profitability of the import-competing sector.
+\end{beamerboxesrounded}
 \end{frame}
 
 
