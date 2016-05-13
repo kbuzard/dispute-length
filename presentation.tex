@@ -1,5 +1,5 @@
-%\documentclass{beamer} 
-\documentclass[handout]{beamer} 
+\documentclass{beamer} 
+%\documentclass[handout]{beamer} 
 \usetheme{Ilmenau}
 \usepackage{graphicx,verbatim,hyperref}
 \usepackage{textpos}
@@ -62,20 +62,18 @@
 \begin{frame}
 \frametitle{The Questions}
 \pause
-\begin{itemize}[<+->]
+\begin{enumerate}[<+->]
 	\item How long do deviations from trade agreement tariffs last? 
-  \item What are the determinants of these deviations?
+  \item What are the determinants of renewals?
 		\begin{itemize}
 			\item They don't happen for \textit{no} reason at all
-			\item Take political economy perspective
 		\end{itemize}
-	\item 
-\end{itemize}
+\end{enumerate}
 \end{frame}
 
 
 \begin{frame}{Institutional Detail}
-\begin{enumerate}[<+->]
+\begin{itemize}[<+->]
 	\item Temporary trade barriers have potential to be renewed
 		\begin{itemize}
 			\item For Anti-dumping (AD) duties, initial five year term, renewal for five years
@@ -83,25 +81,30 @@
 		\end{itemize}
 	\item Authorized by WTO
 	\item Very little in the agreements to guide the process
-	\item WTO litigation has given governments a LOT of latitude on renewals
-	\item Conclusion
-\end{enumerate}
+		\begin{itemize}
+			\item WTO litigation gives gov'ts a LOT of latitude
+		\end{itemize}
+	\item In U.S., for AD:
+		\begin{itemize}
+			\item DOC initiates, determines whether dumping would continue
+			\item ITC determines whether injury would recur / continue
+		\end{itemize}
+\end{itemize}
 \end{frame}
 
  
 \begin{frame}{Preview of Results}
+
+\pause
+The probability that an AD duty gets renewed
+\pause
 \begin{itemize}[<+->]
-	\item H
-		\begin{itemize}
-			\item R
-		\end{itemize}
-	\item E
-		\begin{itemize}
-			\item P
-			\item R
-			\item T
-		\end{itemize}
-	\item T
+	\item Increases in lobbying effort
+	\item Decreases in the MFN tariff
+	\item Is invariant to the trading partner's tariff
+	\item Increases in the profitability of the import-competing sector
+	\item Increases in the strength of the lobby
+	\item May be concave in the AD duty
 \end{itemize}
 \end{frame}
 
@@ -204,12 +207,15 @@ In Home country (foreign is passive):
 \subsection{The Players}
 \begin{frame}
 \frametitle{``Government''}
+\pause
 Renewal decision determined by complex process including DOC, ITC, pressure via other political bodies. Reduced form:
+\pause
 \[
   W_G = \mathit{CS}_X(\tau) + \ga(e,\ta) \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
 \]
 
-\begin{itemize}
+\pause
+\begin{itemize}[<+->]
 	\item $\mathit{CS_i(\cdot)}$: consumer surplus
 	\item $\pi_X(\tau)$: profits of import-competing industry
 	\item $\pi_Y(\tau^*)$: profits of exporting industry
@@ -249,13 +255,15 @@ Renewal decision determined by complex process including DOC, ITC, pressure via 
 \begin{frame}
 \frametitle{Lobby}
 \vskip.2in
+\pause
 Lobby chooses effort to maximize:
 \[
   \left\{1-\Pr\left[ \text{AD Renewal}\right]\right\} \ \pi(\tau^a) + \Pr\left[ \text{AD Renewal} \right]  \pi(\tau^{\mathit{ad}})  - e
 \]
 
 \vskip.1in
-\begin{itemize}
+\pause
+\begin{itemize}[<+->]
 	\item $e$: Lobbying effort
 	\item $\tau^a$: home import tariff under trade agreement
 	\item $\tau^{\textit{ad}}$: home import tariff equivalent under anti-dumping duties
@@ -307,7 +315,7 @@ Lobby chooses effort to maximize:
 \begin{frame}{What's this uncertainty about?}
 \pause
 Lobby must be able to trigger the original AD duty
-\begin{itemize}
+\begin{itemize}[<+->]
 	\item \textit{Can} think of non-adherence to MFN as eqm path dispute
 	\item It could be justified, not motivated by politics/rent-seeking
 	\item But still, firms lobby for duties they don't get
@@ -408,7 +416,7 @@ Assume $\pi(\cdot)$ shifts up uniformly for all $\tau$.
 \end{beamerboxesrounded}
 \end{frame}
 
-[<+->]
+
 \begin{frame}{Exogenous Shifts in $\ga(e,\ta)$}
 
 \pause
