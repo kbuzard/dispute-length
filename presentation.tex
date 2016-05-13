@@ -46,7 +46,7 @@
 	\let\Tiny=\tiny
 
 
-\title[Temporary Trade Barriers: When Will They End?\hspace{2.15in}\insertframenumber/\inserttotalframenumber]{Temporary Trade Barriers: \\ When Will They End?}
+\title[Temporary Trade Barriers: When Will They End?\hspace{2.35in}\insertframenumber/\inserttotalframenumber]{Temporary Trade Barriers: \\ When Will They End?}
 \author[Kristy Buzard]{\texorpdfstring{Kristy Buzard\newline Syracuse University and The Wallis Institute  \newline\url{kbuzard@syr.edu}}{Kristy Buzard}}
 \date{May 13, 2016}
 
@@ -135,33 +135,13 @@ In
 \subsection{Economic and Political Structure}
 \begin{frame}{Timeline}
 \pause
-\begin{enumerate}
-	\item {\bfseries Formation}
-		\begin{enumerate}[i.]
-			\pause
-			\item Executives set trade policy in international agreement
-		\end{enumerate}
-	\pause
-	\item \textbf{Ratification / Maintenance}
-		\begin{enumerate}[i.]
-			\pause
-			\item Firms lobby legislatures to break agreement
-			\pause
-			\item Uncertainty is resolved
-			\pause
-			\item Legislatures decide to break or abide by agreement
-			\pause
-		\end{enumerate}
-	\item \textbf{Trade War} (if agreement is broken)
-	\pause
-		\begin{enumerate}[i.]
-			\item Firms lobby legislatures to set high trade-war tariff
-			\pause
-			\item Uncertainty is resolved
-			\pause
-			\item Legislatures decide trade-war tariff
-		\end{enumerate}
+
+Taking trade agreement tariff and anti-dumping duties as given,
 \pause
+\begin{enumerate}[<+->]
+	\item \textbf{Import-competing firms lobby DOC/ITC to renew AD duties}
+	\item \textbf{Uncertainty is resolved}
+	\item \textbf{DOC/ITC decide whether to renew duties}
 	\item Private actors make production, consumption decisions
 \end{enumerate}
 \end{frame}
@@ -195,24 +175,19 @@ Non-tradable specific factors motivates political activity
 
 
 \begin{frame}{Political Structure}
-In each country (focus on Home):
+In Home country (foreign is passive):
 \pause
 \begin{itemize}[<+->]
-	\item A Unitary Executive
-		\begin{itemize}
-			\item Delegated authority to make trade agreement
-		\end{itemize}
-		%\pause
-	\item A Non-unitary Legislature
+	\item Dept. of Commerce / Int'l Trade Commission
 		\begin{itemize}[<+->]
-			\item Can withdraw delegation, break agreement, and set trade-war tariff
-			\item Susceptible to influence of lobbying
-			\item Decision determined by median legislator
+			\item Can renew AD duties
+			\item Susceptible to influence of lobbying, perhaps both direct and indirect
+			\item Modeled in reduced form
 		\end{itemize}
 %\pause
 	\item A Single Lobby
 		\begin{itemize}
-			\item Represents import-competing sector, $X$ ($Y$ in foreign)
+			\item Represents import-competing sector, $X$
 		\end{itemize}	
 \end{itemize}
 
@@ -221,29 +196,27 @@ In each country (focus on Home):
 
 \subsection{The Players}
 \begin{frame}
-\frametitle{Executive Branch}
-Trade agreement negotiated by unitary executive:
-$$W_E = \mathit{CS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \ga_E \pi_X(\tau) + \pi_Y(\tau^*) + \mathit{TR}(\tau)$$
+\frametitle{``Government''}
+Renewal decision determined by complex process including DOC, ITC, pressure via other political bodies. Reduced form:
+\[
+  W_G = \mathit{CS}_X(\tau) + \ga(e,\ta) \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
+\]
 
-\vskip.2in
 \begin{itemize}
 	\item $\mathit{CS_i(\cdot)}$: consumer surplus
 	\item $\pi_X(\tau)$: profits of import-competing industry
 	\item $\pi_Y(\tau^*)$: profits of exporting industry
 	\item $\mathit{TR}(\tau)$: tariff revenue
-	\item $\ga_E$: weight on profits in the import-competing industry
 \end{itemize}
-
-
 \end{frame}
 
 
-\begin{frame}{Non-Unitary Legislature}
-  Decisions determined by preferences of Median Legislator:
+\begin{frame}
+\frametitle{``Government''}
 \[
-  W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \ga(e,\ta) \pi_X(\tau) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
+  W_G = \mathit{CS}_X(\tau) + \ga(e,\ta) \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
 \]
-\vskip-.1in
+
 \pause
 \begin{itemize}
 	\item $\ga(e,\ta)$: weight on import-competing industry profits
@@ -251,18 +224,16 @@ $$W_E = \mathit{CS}_X(\tau) + \mathit{CS}_Y(\tau^*) + \ga_E \pi_X(\tau) + \pi_Y(
 			\pause
 			\item $e$: lobbying effort
 			\pause
-			\item $\ta$: uncertain element in determination of ML's identity
+			\item $\ta$: uncertain element in $G$'s preferences
 		\end{itemize}
 \end{itemize}
 
 \pause
 \vskip.1in
-\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Assumptions on $\ga(e,\ta)$}
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Assumption 1}
 \begin{enumerate}
   \pause
 	\item $\ga(e,\ta)$ is increasing and concave in $e$ for all $\ta \in \Theta$.
-  \pause
-  \item $\ga(e,\ta) \geq \ga_E \geq 1 \ \forall \ta$ 
 \end{enumerate}
 \end{beamerboxesrounded}
 \end{frame}
@@ -286,34 +257,24 @@ Lobby chooses effort to maximize:
 \end{frame}
 
 
-\section{Results}
-\subsection{Results: The Certain Case}
+\section{Uncertainty}
+\subsection{}
 \begin{frame}{Timeline}
-\begin{enumerate}
-	\item \textbf{Formation}
-		\begin{enumerate}[i.]
-			\item Executives set trade policy in international agreement
-		\end{enumerate}
-	\item \textbf{Ratification / Maintenance}
-		\begin{enumerate}[i.]
-			\item Firms lobby legislatures to break agreement
-			\item Legislatures decide to break or abide by agreement
-		\end{enumerate}
-	\item {\color{gray} \textbf{Trade War} (if agreement is broken)}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Firms lobby legislatures to set high trade-war tariff}
-			\item {\color{gray} Legislatures decide trade-war tariff}
-		\end{enumerate}
+\begin{enumerate}[<+->]
+	\item \textbf{Import-competing firms lobby DOC/ITC to renew AD duties}
+	\item {\color{gray} \textbf{Uncertainty is resolved}}
+	\item \textbf{DOC/ITC decide whether to renew duties}
 	\item {\color{gray} Private actors make production, consumption decisions}
 \end{enumerate}
+	
 \end{frame}
 
-\begin{frame}{Highlight: Separation of Powers}
+\begin{frame}{Why uncertainty?}
 \pause
 \textbf{Legislature}
 \pause
 \begin{itemize}
-	\item Breaks agreement if median legislator prefers $\tau^{\mathit{ad}}$ to $\tau^a$
+	\item Renews AD duties if $G$ prefers $\tau^{\mathit{ad}}$ to $\tau^a$
 \end{itemize}
 
 \pause
@@ -321,102 +282,46 @@ Lobby chooses effort to maximize:
 \textbf{Lobby}
 \pause
 \begin{itemize}[<+->]
-	\item Given the $(\tau^a,\tau^{*a})$ it faces, lobby knows what $e_b$ is required to break the agreement
- 	\item Lobby pays this $e_b$ if: \hskip.2in $\pi(\tau^{\mathit{tw}}) - e > \pi(\tau^a)$
+	\item Given $(\tau^a,\tau^{*a})$ and $\tau^{\mathit{ad}}$, lobby knows what $e$ is required to induce renewal
+ 	\item Lobby pays this $e$ if: \hskip.2in $\pi(\tau^{\mathit{ad}}) - e > \pi(\tau^a)$
 \end{itemize}
 
 \pause
-\vskip.13in
-\textbf{Executives}
+\vskip.1in
+\textbf{In Equilibrium}
 \pause
 \begin{itemize}[<+->]
-	\item Set $(\tau^a,\tau^{*a})$ to make paying $e_b$ unprofitable
-		\begin{itemize}
-			\item[$\Rightarrow$] $e_b=0$, agreement remains in force
-		\end{itemize}
-	\item High tariffs, no lobbying, no trade disruptions
-\end{itemize}
-\end{frame}
-
-
-\subsection{Full Results}
-\begin{frame}{Political Uncertainty Illustration}
-\pause
-An Example (Bagwell $\&$ Staiger 2005)
-\pause
-\begin{itemize}[<+->]
-	\item $D(P_i) = 1 - P_i$
-	\item $Q_X(P_X) = \frac{P_X}{2}$, $Q_Y(P_Y) = P_Y$
-	\item $P_X^W = \frac{4-3\tau}{7}$, $P_X = \frac{4+4\tau}{7}$
-	\item $\ga(e,\ta) = 1.25 + e^{0.2} + \ta$ 
-		\begin{itemize}
-			\item $\ta \sim U[-0.25,0.25]$
-		\end{itemize}
-	\item $\ga_E = 1$
+	\item Firms only put forth effort when they know renewal will be granted
 \end{itemize}
 
 \end{frame}
 
 
+\section{Results}
+\subsection{}
 \begin{frame}{Timeline}
-\begin{enumerate}
-	\item {\color{gray} \textbf{Formation}}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Executives set trade policy in international agreement}
-		\end{enumerate}
-	\item \textbf{Ratification / Maintenance}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Firms lobby legislatures to break agreement}
-			\item Legislatures decide to break or abide by agreement
-		\end{enumerate}
-	\item {\color{gray} \textbf{Trade War} (if agreement is broken)}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Firms lobby legislatures to set high trade-war tariff}
-			\item {\color{gray} Legislatures decide trade-war tariff}
-		\end{enumerate}
-	\item {\color{gray} Private actors make production, consumption decisions}
+\begin{enumerate}[<+->]
+	\item \textbf{Import-competing firms lobby DOC/ITC to renew AD duties}
+	\item \textbf{Uncertainty is resolved}
+	\item \textbf{DOC/ITC decide whether to renew duties}
+	\item Private actors make production, consumption decisions
 \end{enumerate}
 \end{frame}
 
 
-\begin{frame}{Legislature}
-  Legislature breaks trade agreement if median legislator's utility is higher under trade war than trade agreement
+\begin{frame}{Government}
+  $G$ breaks trade agreement if its utility is higher under AD duties than trade agreement tariff
   \begin{itemize}
-		\item Median legislator's identity is uncertain through $\ta$
+		\item Preferences are uncertain through $\ta$
 	\end{itemize}
 	
 	\pause
   \vskip.2in
-  Probability that Legislature breaks agreement: \\
+  Probability that $G$ breaks agreement: \\
 	\pause
   \vskip.1in
-    $b(e,\tau^a,\tau^{*a},\tau^{\textit{ad}},\ta)$ probability median legislator prefers $\tau^{tw}$ to $\tau^a$ for a given $\ta$
+    $b(e,\tau^a,\tau^{*a},\tau^{\textit{ad}},\ta)$ probability median legislator prefers $\tau^{ad}$ to $\tau^a$ for a given $\ta$ and $e$
 \end{frame}
-
-
-
-
-\begin{frame}{Timeline}
-\begin{enumerate}
-	\item {\color{gray} \textbf{Formation}}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Executives set trade policy in international agreement}
-		\end{enumerate}
-	\item \textbf{Ratification / Maintenance}
-		\begin{enumerate}[i.]
-			\item Firms lobby legislatures to break agreement
-			\item {\color{gray} Legislatures decide to break or abide by agreement}
-		\end{enumerate}
-	\item {\color{gray} \textbf{Trade War} (if agreement is broken)}
-		\begin{enumerate}[i.]
-			\item {\color{gray} Firms lobby legislatures to set high trade-war tariff}
-			\item {\color{gray} Legislatures decide trade-war tariff}
-		\end{enumerate}
-	\item {\color{gray} Private actors make production, consumption decisions}
-\end{enumerate}
-\end{frame}
-
-
 
 
 \section{Conclusion}
