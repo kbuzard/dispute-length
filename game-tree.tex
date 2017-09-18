@@ -1,0 +1,137 @@
+\begin{comment}
+\documentclass[10pt]{article}
+
+\addtolength{\textwidth}{1.3in}
+\addtolength{\oddsidemargin}{-.65in} %left margin
+\addtolength{\evensidemargin}{-.65in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headheight}{0.0in}
+\setlength{\footskip}{.375in}
+\renewcommand{\baselinestretch}{1.0}
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{titling}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{cite}
+\usepackage{times, verbatim,bm,pifont,pdfsync}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{tikz}
+
+% disables chapter, section and subsection numbering
+\setcounter{secnumdepth}{-1} 
+
+\usepackage{amsbsy,amssymb, amsmath, amsthm, MnSymbol,bbding}
+\usepackage[hang,flushmargin]{footmisc} 
+
+\usepackage[pdftex,
+bookmarks=true,
+bookmarksnumbered=false,
+pdfview=fitH,
+bookmarksopen=true]{hyperref}
+
+
+\newcommand{\ta}{\theta}
+\newcommand{\al}{\alpha}
+\newcommand{\Ta}{\Theta}
+\newcommand{\expect}{\mathbb{E}}
+\newcommand{\Bt}{B(\bm{\tau^a})}
+\newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\bte}{\bm{\tau^E}}
+\newcommand{\btn}{\bm{\tau^n}}
+\newcommand{\ga}{\gamma}
+
+
+\begin{document}
+\end{comment}
+
+\tikzset{
+% Two node styles for game trees: solid and hollow
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5,fill=white}
+%non node/.style={circle,draw,inner sep=.1,fill=black}
+}
+\begin{tikzpicture}[scale=1.5,font=\footnotesize, grow=right]
+% Specify spacing for each level of the tree
+\tikzstyle{level 1}=[level distance=10mm,sibling distance=8mm]
+\tikzstyle{level 2}=[level distance=8mm,sibling distance=8mm]
+% The Tree
+\node(0)[solid node,label=above:{$E,E^*$}]{} 
+child{node(1)[solid node,label=below:{$0$}]{}}
+child{[white] node(2)[solid node,xshift=12,label=above:{L}]{}  
+	child{[black] node(4)[solid node,label=below:{$0$}]{}}
+	child{[white] node(5)[hollow node,xshift=12]{} 
+	 child[sibling distance=11mm]{[black] node(22)[solid node]{}  }
+	 child[sibling distance=11mm]{[black] node(23)[hollow node]{}  
+		child[sibling distance=8mm]{[black] node(7)[solid node,label=below:{$-\infty$}]{}}
+		child[sibling distance=8mm]{[white] node(8)[solid node,xshift=12]{}  
+			child[sibling distance=10mm]{[black] node(10)[solid node]{}  }
+			child[sibling distance=10mm]{[black] node(12)[solid node]{}  
+				child[sibling distance=5mm]{[black] node(13)[solid node,label=below:{$0$}]{}}
+				child{[white] node(15)[solid node,xshift=7]{} 
+					child[sibling distance=5mm]{[black] node(19)[solid node,label=below:{$-\infty$}]{}}
+					child{[white] node(21)[solid node,xshift=7]{} 
+						child[sibling distance=5mm]{[black] node(16)[solid node,label=below:{$0$}]{} }
+						child{[white] node(18)[hollow node,xshift=12,label=left:{}]{}  }
+						child[sibling distance=5mm]{[black] node(17)[solid node,label=above:{$\infty$}]{} }
+						edge from parent node[black, xshift=16]{$\ta_n$} 
+						}
+					child[sibling distance=5mm]{[black] node(21)[solid node,label=above:{$\infty$}]{} }
+					edge from parent node[black, xshift=15]{$e_n$} 
+				}
+				child[sibling distance=5mm]{[black] node(14)[solid node,label=above:{$\infty$}]{} }
+				}
+			edge from parent node[black, xshift=20]{$\ta_b$} 
+			}
+		child[sibling distance=8mm]{[black] node(9)[solid node,label=above:{$\infty$}]{} }
+		}
+	 edge from parent node[black, xshift=20]{$e_b$} 	
+	 }
+	child{[black] node(6)[solid node,label=above:{$\infty$}]{}}
+	edge from parent node[black, xshift=23]{$\bta$} 
+	}
+child{node(3)[solid node,label=above:{$\infty$}]{}
+}
+;
+% information set
+    \draw[solid,bend right](1)to(3);
+		\draw[solid,bend right](4)to(6);
+		\draw[solid,bend right](7)to(9);
+		\draw[solid,bend right](13)to(14);
+		\draw[solid,bend right](16)to(17);
+		\draw[solid,bend right](19)to(21);
+% labels
+		\node[above,xshift=3,yshift=5]at(2){$L$}; 
+		\node[above,xshift=1,yshift=5]at(23){$N$}; 
+		\node[above,xshift=3,yshift=5]at(5){$N$}; 
+		\node[above,xshift=6,yshift=5]at(8){$Leg$}; 
+		\node[above,xshift=5,yshift=5]at(12){$L$};
+		\node[above,xshift=13,yshift=-17]at(21){$Leg$}; 
+		\node[above,xshift=7,yshift=5]at(15){$N$}; 
+		\node[left, xshift=-2]at(18){$\tau^n$}; 
+		\node[below left,yshift=-12]at(12){Break}; 
+		\node[below left,yshift=4]at(10){Abide}; 
+		\draw[solid](5)circle(.05cm);
+		\draw[solid](0)circle(.15cm);
+		\node[right]at (10) {$W_E\left(\bta\right),$};
+		\node[right,yshift=-10]at (10) {$\pi\left(\tau^a\right)-e_b,$};
+		\node[right,yshift=-20]at (10) {$W_{ML}\left(\ga(e_b,\ta_b),\bta\right)$};
+		\node[right]at (18) {$W_E\left(\btn\right),$};
+		\node[right,yshift=-10]at (18) {$\pi\left(\tau^n\right)-e_b -e_n,$};
+		\node[right,yshift=-20]at (18) {$W_{ML}\left(\ga(e_n,\ta_n),\btn\right)$};
+		\node[right,yshift=-5]at (22) {$W_E\left(\bta\right),$};
+		\node[right,yshift=-15]at (22) {$\pi\left(\tau^a\right)-e_b,$};
+		\node[right,yshift=-25]at (22) {$W_{ML}\left(\ga(e_b,\ta_b),\bta\right)$};
+		\node[below left,xshift=-4,yshift=8]at(23){Opp.}; 
+		\node[below left,xshift=-4,yshift=-10]at(23){(o)}; 
+		\node[below left,xshift=-3,yshift=7]at(22){No opp.}; 
+		\node[below left,xshift=6,yshift=20]at(22){(1-o)}; 
+\end{tikzpicture}
+
+%\end{document}
