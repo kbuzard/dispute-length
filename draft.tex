@@ -136,9 +136,9 @@ After this, uncertainty about the government agency's preferences is resolved. A
 
 \subsection{Preferences}
 \label{sec:pref}
-With the structure of politics and the economy symmetric and the latter fully separable, I focus on the home country's and the $X$-sector. The details are analogous for $Y$ and foreign. The home legislature's welfare function is
+With foreign not active in setting policy and the structure the economy symmetric and fully separable, I focus on the home country and the $X$-sector, which is the only politically active sector. The government agency's welfare is given by
 \begin{equation}
-  W_{\mathit{ML}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
+  W_{\mathit{G}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
   \label{eq:ml}
 \end{equation}
 where $\mathit{CS}$ is consumer surplus, $\pi$ are profits, $\ga(e,\ta)$ is the weight placed on profits in the import-competing industry, and $\mathit{TR}$ is tariff revenue.\footnote{Labor income $l$ could also be included in both median legislator and executive welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.} I model the decisions of the legislature as being taken by a median legislator with the weight the median legislator places on import-competing industry profits affected by the level of lobbying effort $e$ and a random variable $\ta$. I make the following assumptions on $\ga(e,\ta)$:
@@ -237,13 +237,13 @@ since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c
 \label{sec:break}
 We can now proceed by backward induction to analyze the legislature's incentives to uphold or break the trade agreement. The legislature will break the agreement and set the tariff at $\tau^n$ if the median legislator's utility from the Nash tariffs is higher than his utility from the trade agreement tariffs, i.e. if
 \begin{equation}
-  W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right)
+  W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right)
   \label{eq:lwcg}
 \end{equation}
   
 The outcome of the vote on whether or not to break the trade agreement is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place. I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:\footnote{I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.}
 \begin{multline}
-  b(e_b,\bta) = \expect_{\ga|e_b} \bm{1} [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) ] \\ = \Pr [ W_{ML}(\btn,\ga(e_b,\ve_b)) > W_{ML}\left(\bta,\ga(e_b,\ve_b)\right) | e_b]
+  b(e_b,\bta) = \expect_{\ga|e_b} \bm{1} [ W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right) ] \\ = \Pr [ W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right) | e_b]
   \label{eq:b}
 \end{multline}
 
