@@ -141,7 +141,7 @@ With foreign not active in setting policy and the structure the economy symmetri
   W_{\mathit{G}} = \mathit{CS}_X(\tau) + \ga(e,\ve) \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
   \label{eq:ml}
 \end{equation}
-where $\mathit{CS}$ is consumer surplus, $\pi$ are profits, $\ga(e,\ta)$ is the weight placed on profits in the import-competing industry, and $\mathit{TR}$ is tariff revenue.\footnote{Labor income $l$ could also be included in both median legislator and executive welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.} I model the decisions of the legislature as being taken by a median legislator with the weight the median legislator places on import-competing industry profits affected by the level of lobbying effort $e$ and a random variable $\ta$. I make the following assumptions on $\ga(e,\ta)$:
+where $\mathit{CS}$ is consumer surplus, $\pi$ are profits, $\ga(e,\ta)$ is the weight placed on profits in the import-competing industry, and $\mathit{TR}$ is tariff revenue.\footnote{Labor income $l$ could also be included in government welfare. I omit it because its inclusion alters none of the results and only serves to complicate the exposition.} I model the decisions of the government agency as being taken by a median actor with the weight the median actor places on import-competing industry profits affected by the level of lobbying effort $e$ and a random variable $\ta$. I make the following assumptions on $\ga(e,\ta)$:
 
 \begin{assumption}
   $\ga(e,\ta)$ is increasing and concave in $e$ for every $\ta \in \Theta$.
@@ -153,45 +153,17 @@ where $\mathit{CS}$ is consumer surplus, $\pi$ are profits, $\ga(e,\ta)$ is the 
   \label{as:ga_ta}
 \end{assumption}
 
-Assumption~\ref{as:ga_c} formalizes the intuition that the legislature favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity. It rules out higher effort making lower weights more likely and that the structure of uncertainty changes with increasing effort so that higher weights become more likely at an accelerating pace. Assumption~\ref{as:ga_ta} simply provides for an intuitive labeling so that larger realizations of $\ta$ increase the value of the political economy weight.
+Assumption~\ref{as:ga_c} formalizes the intuition that the government agency favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity. It rules out higher effort making lower weights more likely and that the structure of uncertainty changes with increasing effort so that higher weights become more likely at an accelerating pace. Assumption~\ref{as:ga_ta} simply provides for an intuitive labeling so that larger realizations of $\ta$ increase the value of the political economy weight.
 
 \textbf{LOBBY'S OBJECTIVE IS DIFFERENT HERE}
 
-Given its expectations and the legislature's preferences, the home lobby chooses its lobbying effort ($e_b$ to influence the break decision and $e_n$ to influence the trade war tariff) to maximize the welfare function:
+Given its expectations and the government agency's preferences, the home lobby chooses its lobbying effort ($e_b$ to influence the break decision and $e_n$ to influence the trade war tariff) to maximize the welfare function:
 \begin{equation}
   \expect \left[U_L \right] = \Pr\left[ \text{TradeWar} \right] \left[ \pi(\tau^{\mathit{n}}) - e_n \right] + \Pr\left[ \text{TradeAgreement} \right] \pi(\tau^a) - e_b
   \label{eq:lv}
 \end{equation}
 where $\pi(\cdot)$ is the current-period profit and the subscript $X$ has been dropped for notational convenience. 
 
-\textbf{NOT SURE I KNOW EXACTLY WHAT THE GOVERNMENT'S OBJECTIVE IS, DIVIDED GOV'T EVEN?}
-
-In the first stage, the executives choose the trade agreement tariffs. With executive welfare in a trade war the disagreement point, the division of surplus according to the Nash bargaining solution is
-\[
-  V_E(\bta) + t = W_E(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
-\]
-\[
-  V_E^*(\bta) - t = W_E^*(\btn) + \frac{1}{2} \left( MV(\bta) - W_E(\btn) - W_E^*(\btn) \right)
-\]
-where expectation operators are dropped for convenience, $MV(\bta)$ is the maximized joint value and $t$ is an intergovernmental transfer.\footnote{While direct monetary transfers have to date rarely been used in practice, it seems appropriate to interpret linked concessions on non-trade issues as indirect transfers (Klimenko, Ramey and Watson (2008); Maggi and Staiger (2011)). Here, transfers do not occur as long as the full set of symmetry assumptions are maintained but are an important consideration in asymmetric environments.} The solution to this system of equations determines the trade agreement tariffs.
-
-I simplify the problem by assuming that political constraints prevent the executives from choosing asymmetric tariffs. This implies that the executives simply maximize their expected joint payoffs:
-\begin{multline}
-  \expect \left[W_E(\bta) \right] + \expect \left[ W_E^{*}(\bta) \right] = \Pr\left[ \text{TradeWar} \right] \left[W_E(\bm{\tau}^{\mathit{n}}) + W_E^*(\bm{\tau}^{\mathit{n}}) \right] + \\ \Pr\left[ \text{TradeAgreement} \right] \left[W_E(\bta) + W_E^*(\bta) \right]
-  \label{eq:jv}
-\end{multline}
-The home executive's welfare is specified as
-\[
-  W_E(\bm{\tau}) = \mathit{CS}_X(\tau) + \ga_E \cdot \pi_X(\tau) + \mathit{CS}_Y(\tau^*) + \pi_Y(\tau^*) + \mathit{TR}(\tau)
-\]
-This is identical to the legislature's welfare function except the weight the executive places on the profits of the import industry is not a function of lobbying effort. This setup does not require that the executives are not lobbied; the assumption is innocuous as long as the executives' preferences are not directly altered in a significant way by lobbying over trade. I make one more related assumption on $\ga(e,\ta)$:
-
-\begin{assumption}
-  $\ga(e,\ta) \geq \ga_E \geq 1 \ \forall e,\ta$.
-  \label{as:ga_l_e}
-\end{assumption}
-
-That is, even for the least favorable outcome of the lobbying process, the legislature is more protectionist than the executive regardless of the lobby's effort choice. This is not essential but it simplifies the analysis, ensuring that trade agreement tariffs are smaller than trade war tariffs. It matches the empirical finding that politicians with larger constituencies are less sensitive to special interests and represents well the post-war U.S. where Congress has consistently been more protectionist than the President.\footnote{cfr. Lohmann and O'Halloran (1994) for the general argument, Destler (2005) on U.S. trade politics, and Grossman and Helpman (2005) for a formal model.}
 
 \subsection{Information and Equilibrium Selection}
 \label{sec:info}
@@ -290,7 +262,7 @@ The first order condition shows that the lobby balances the cost of an extra dol
 	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
-Assumption~\ref{as:ga_l_e} and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
+Assumption [old assumption3] and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
   \begin{equation}
 	  \frac{\partial b(0,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
@@ -309,7 +281,7 @@ If the executives were to set $\tau^a = \tau^n$, there would be no incentive for
 \label{sec:ta}
 I represent the probability that the trade agreement will be broken as $B(\bta)=b(e(\bta),\bta)$ where $e(\bta)$ is the best response function implicit in Equation \ref{eq:lobbyfoc}, the lobby's first order condition.
 
-To solve for the trade agreement tariffs, one must maximize the following modified version of Equation \ref{eq:jv}:
+To solve for the trade agreement tariffs, one must maximize the following modified version of Equation ``Joint Value'' (removed):
 \begin{equation}
     \left\{ o \cdot B(\bta) + o^* \cdot B^*(\bta) \right\} \bm{W_E}(\btn) + \left\{ 1- o \cdot B(\bta) - o^* \cdot B^*(\bta) \right\} \bm{W_E}(\bta)  
   \label{eq:jv2}
