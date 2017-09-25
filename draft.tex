@@ -60,6 +60,7 @@ bookmarksopen=true]{hyperref}
 \newcommand{\expect}{\mathbb{E}}
 \newcommand{\Bt}{B(\bm{\tau^a})}
 \newcommand{\bta}{\bm{\tau^a}}
+\newcommand{\btad}{\bm{\tau^{ad}}}
 \newcommand{\bte}{\bm{\tau^E}}
 \newcommand{\btn}{\bm{\tau^n}}
 \newcommand{\ga}{\gamma}
@@ -129,7 +130,7 @@ In the home country, there is a government agency that has the power to renew (o
 	\caption{Extensive Form\label{fig:ext}}
 \end{figure}
 
-Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and levels of anti-dumping duties $\bta = \left(\tau^{ad},\tau^{*ad}\right)$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the anti-dumping duties by choice of lobbying effort $e$. 
+Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and levels of anti-dumping duties $\btad = \left(\tau^{ad},\tau^{*ad}\right)$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the anti-dumping duties by choice of lobbying effort $e$. 
 
 After this, uncertainty about the government agency's preferences is resolved. All players simultaneously observe the realization of the random variable $\ta$ that represents this uncertainty. The political stage concludes with the agency making a choice to renew the anti-dumping duties or let them expire. In the event that the anti-dumping duties expire, the home country's trade policy reverts to the trade agreement tariff $\tau^a$. Finally, producers and consumers make their decisions.
 
@@ -153,16 +154,14 @@ where $\mathit{CS}$ is consumer surplus, $\pi$ are profits, $\ga(e,\ta)$ is the 
   \label{as:ga_ta}
 \end{assumption}
 
-Assumption~\ref{as:ga_c} formalizes the intuition that the government agency favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity. It rules out higher effort making lower weights more likely and that the structure of uncertainty changes with increasing effort so that higher weights become more likely at an accelerating pace. Assumption~\ref{as:ga_ta} simply provides for an intuitive labeling so that larger realizations of $\ta$ increase the value of the political economy weight.
+Assumption~\ref{as:ga_c} means that the government agency favors the import-competing industry more the higher is its lobbying effort, but that there are diminishing returns to lobbying activity. It rules out higher effort making lower weights more likely and that the structure of uncertainty changes with increasing effort so that higher weights become more likely at an accelerating pace. Assumption~\ref{as:ga_ta} simply provides for an intuitive labeling so that larger realizations of $\ta$ increase the value of the political economy weight.
 
-\textbf{LOBBY'S OBJECTIVE IS DIFFERENT HERE}
-
-Given its expectations and the government agency's preferences, the home lobby chooses its lobbying effort ($e_b$ to influence the break decision and $e_n$ to influence the trade war tariff) to maximize the welfare function:
+Given its expectations and the government agency's preferences, the home lobby chooses its lobbying effort $e$ to maximize the welfare function:
 \begin{equation}
-  \expect \left[U_L \right] = \Pr\left[ \text{TradeWar} \right] \left[ \pi(\tau^{\mathit{n}}) - e_n \right] + \Pr\left[ \text{TradeAgreement} \right] \pi(\tau^a) - e_b
+  \expect \left[U_L \right] = \Pr\left[ \text{AD Renewal} \right]  \pi_X(\tau^{\mathit{ad}}) +\left\{1-\Pr\left[ \text{AD Renewal}\right]\right\} \ \pi_X(\tau^a) - e
   \label{eq:lv}
 \end{equation}
-where $\pi(\cdot)$ is the current-period profit and the subscript $X$ has been dropped for notational convenience. 
+where $\pi(\cdot)$ is the current-period profit. 
 
 
 \subsection{Information and Equilibrium Selection}
@@ -174,7 +173,7 @@ I examine a simple class of equilibria that have three key features. First, info
 
 Second, whenever there is a possibility of multiple equilibria, I focus on the one that maximizes the executives' welfare. Since I assume the executives are social welfare maximizers, this selection criterion puts results in terms of the maximal level of trade policy cooperation that is possible. It also allows the question of whether governments use trade agreements as political commitment devices to be answered in a straightforward way.
 
-Finally, I assume that an external authority can ensure enforcement of the agreement.\footnote{Buzard (2015) considers a similar model in a repeated-game context and can therefore remove this restriction.} 
+Finally, I assume that an external authority can ensure enforcement of the agreement.
 
 
 \section{Main Results}
