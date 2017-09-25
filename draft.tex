@@ -119,7 +119,7 @@ where e.g. $M_X$ are home-county imports and $E_X^*$ are foreign exports of good
 
 $P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a terms-of-trade externality. Profits in a sector are increasing in the price of its good and also in the domestic tariff. This fact, combined with the assumptions on specific factor ownership, motivates political activity by the import-competing lobby.
 
-In the home country, there is a government agency that has the power to renew (or not) anti-dumping duties. To focus attention on protectionist political forces, highlight the model's central mechanisms and minimize the number of actors that must be modeled, we assume that only the import-competing industry is politically-organized and that it is represented by a single lobbying organization.\footnote{The model extends easily to the case of multiple lobbies.\label{fn:lobby}} Policy-makers and lobbyists in the foreign country are assumed to be passive.
+In the home country, there is a government agency that has the power to renew (or not) antidumping duties. To focus attention on protectionist political forces, highlight the model's central mechanisms and minimize the number of actors that must be modeled, we assume that only the import-competing industry is politically-organized and that it is represented by a single lobbying organization.\footnote{The model extends easily to the case of multiple lobbies.\label{fn:lobby}} Policy-makers and lobbyists in the foreign country are assumed to be passive.
 
 \textbf{REVISE EXTENSIVE FORM}
 
@@ -130,9 +130,9 @@ In the home country, there is a government agency that has the power to renew (o
 	\caption{Extensive Form\label{fig:ext}}
 \end{figure}
 
-Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and levels of anti-dumping duties $\btad = \left(\tau^{ad},\tau^{*ad}\right)$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the anti-dumping duties by choice of lobbying effort $e$. 
+Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and levels of antidumping duties $\btad = \left(\tau^{ad},\tau^{*ad}\right)$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the antidumping duties by choice of lobbying effort $e$. 
 
-After this, uncertainty about the government agency's preferences is resolved. All players simultaneously observe the realization of the random variable $\ta$ that represents this uncertainty. The political stage concludes with the agency making a choice to renew the anti-dumping duties or let them expire. In the event that the anti-dumping duties expire, the home country's trade policy reverts to the trade agreement tariff $\tau^a$. Finally, producers and consumers make their decisions.
+After this, uncertainty about the government agency's preferences is resolved. All players simultaneously observe the realization of the random variable $\ta$ that represents this uncertainty. The political stage concludes with the agency making a choice to renew the antidumping duties or let them expire. In the event that the antidumping duties expire, the home country's trade policy reverts to the trade agreement tariff $\tau^a$. Finally, producers and consumers make their decisions.
 
 
 \subsection{Preferences}
@@ -178,30 +178,34 @@ Finally, I assume that an external authority can ensure enforcement of the agree
 
 \section{Main Results}
 \label{sec:main}
+
+\textbf{ADD IN NARRATIVE DIRECTION}
+
 To understand the government's decision about whether to renew a temporary trade barrier, I first examine the lobby's incentives.
 
 
 \bigskip
-\subsection{To Break or Not to Break?}
+\subsection{The Renewal Decision}
 \label{sec:break}
-We can now proceed by backward induction to analyze the legislature's incentives to uphold or break the trade agreement. The legislature will break the agreement and set the tariff at $\tau^n$ if the median legislator's utility from the Nash tariffs is higher than his utility from the trade agreement tariffs, i.e. if
+
+The government agency will renew the antidumping duty if the median actor's utility from the antidumping duty is higher than his utility from the trade agreement tariffs, i.e. if
 \begin{equation}
-  W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right)
+  W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right)
   \label{eq:lwcg}
 \end{equation}
   
-The outcome of the vote on whether or not to break the trade agreement is not known to \textit{any} player until the uncertainty over the identity of the median legislator is resolved at the moment the vote takes place. I represent the probability that the home legislature breaks the trade agreement and sets the tariff at $\tau^n$ as:\footnote{I suppress the Nash tariffs in the expression of the break probability since they do not vary from the point of view of earlier stages.}
+The outcome of the decision on whether or not to renew the antidumping duties is not known to \textit{any} player until the uncertainty over the identity of the median governmental actor is resolved at the moment the decision is made. I represent the probability that antidumping duties are renewed as:
 \begin{multline}
-  b(e_b,\bta) = \expect_{\ga|e_b} \bm{1} [ W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right) ] \\ = \Pr [ W_G(\btn,\ga(e_b,\ve_b)) > W_G\left(\bta,\ga(e_b,\ve_b)\right) | e_b]
+  b(e,\bta) = \expect_{\ga|e} \bm{1} [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) ] \\ = \Pr [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) | e]
   \label{eq:b}
 \end{multline}
 
-We are now in a position to examine the legislature's decision more closely. Of central concern is how the probability that the legislature will break the trade agreement varies with lobbying effort: 
+We are now in a position to examine the governments's decision more closely. Of central concern is how the probability that the government agency will renew the antidumping duties varies with lobbying effort: 
 
-\begin{result}
-  The probability that the legislature breaks a trade agreement is increasing and concave in $e_b$.
+\begin{lemma}
+  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $e$, $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
   \label{res:bincC}
-\end{result}
+\end{lemma}
 
 \noindent All proofs are in the Appendix. Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
@@ -213,7 +217,7 @@ Turning to the effects of the trade-agreement tariffs on the probability that th
 
 The lower world price for home's export good has a larger negative effect on profits than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
 
-The relationship between $\tau^a$ and break probability is more complex. For any effort level $e_b$, when the trade agreement tariff is very low, only a small set of realizations of $\ta_b$ associated with the lowest values of $\ga(e_b,\ta_b)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e_b,\ta_b)$ are consistent with approving the trade agreement, so the set of $\ta_b$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
+The relationship between $\tau^a$ and break probability is more complex. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
   Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly decreasing in $\tau^a$.
@@ -232,16 +236,16 @@ Since I focus on symmetric equilibria, any increase in $\tau^a$ is accompanied b
 \label{sec:lob_un}
 The lobby chooses its level of effort as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement. The lobby maximizes probability-weighted profits net of effort:
 \[
-  \max_{e_b} b(e_b,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e_b,\bta)] \pi(\tau^a) - e_b
+  \max_{e} b(e,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e,\bta)] \pi(\tau^a) - e
 \]
 The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of provoking the trade war:
 \begin{equation}
-	\frac{\partial b(e_b,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
+	\frac{\partial b(e,\bta)}{\partial e} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
 Assumption [old assumption3] and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
   \begin{equation}
-	  \frac{\partial b(0,\bta)}{\partial e_b} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
+	  \frac{\partial b(0,\bta)}{\partial e} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
   \end{equation}
 If the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. There are some other cases in which it is in the executives' interest to set trade agreement tariffs so as to disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
