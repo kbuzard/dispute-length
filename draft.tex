@@ -117,7 +117,7 @@ $$M_X(P_X)= D(P_X)-Q_X(P_X) = Q_X^*(P_X^*) - D(P_X^*) = E_X^*(P_X^*)$$
 $$E_Y(P_Y)=Q_Y(P_Y)-D(P_Y) = D(P_Y^*)-Q_Y^*(P_Y) = M_Y^*(P_Y^*)$$
 where e.g. $M_X$ are home-county imports and $E_X^*$ are foreign exports of good $X$. The price of the numeraire is equal to one in both countries and on the world market.
 
-$P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a terms-of-trade externality. Profits in a sector are increasing in the price of its good and also in the domestic tariff. This fact, combined with the assumptions on specific factor ownership, motivates political activity by import-competing lobbies.
+$P_X^W$ and $P_Y^W$ are decreasing in $\tau$ and $\tau^*$ respectively, while $P_X$ and $P_Y^*$ are increasing in the respective domestic tariff. This gives rise to a terms-of-trade externality. Profits in a sector are increasing in the price of its good and also in the domestic tariff. This fact, combined with the assumptions on specific factor ownership, motivates political activity by the import-competing lobby.
 
 In the home country, there is a government agency that has the power to renew (or not) anti-dumping duties. To focus attention on protectionist political forces, highlight the model's central mechanisms and minimize the number of actors that must be modeled, we assume that only the import-competing industry is politically-organized and that it is represented by a single lobbying organization.\footnote{The model extends easily to the case of multiple lobbies.\label{fn:lobby}} Policy-makers and lobbyists in the foreign country are assumed to be passive.
 
@@ -178,29 +178,7 @@ Finally, I assume that an external authority can ensure enforcement of the agree
 
 \section{Main Results}
 \label{sec:main}
-To understand how the executives optimally structure trade agreements, I first examine the lobbies' incentives and the legislatures' decisions regarding breach of the agreement, including how trade-war tariffs are set.
-
-\subsection{Trade-War Tariffs}
-\label{sec:twt}
-In the event that the trade agreement is broken, the legislature sets its tariff $\tau$ unilaterally by maximizing Equation~\ref{eq:ml} given $\tau^*$. Because there are no interactions between the home and foreign tariffs, the home country's tariff maximizes weighted home-country welfare in the $X$-sector only. Unilateral optimization leads to what I refer to as the (expected) Nash or trade-war tariffs $\tau^n$ as the solution to the following first order condition:\footnote{Note that the random variable in the median legislator's weight on import profits is written as $\ta_n$ at this stage to distinguish it from $\ta_b$ at the break stage: as two separate votes are taken, there are two distinct realizations of uncertainty.}
-\begin{equation}
-		\frac{\partial \mathit{CS}_X(\tau)}{\partial \tau^n} + \ga(e_n,\ve_n) \cdot \frac{\partial \pi_X(\tau)}{\partial \tau^n} +  \frac{\partial \mathit{TR}(\tau)}{\partial \tau^n} = 0 .
-		\label{eq:legfoc}
-\end{equation}
-
-In the event of a trade war, the lobby chooses its effort $e_n$ given this tariff-setting behavior by maximizing its profits net of effort: $\pi\left(\tau^n\left(\ga\left(e_n,\ve_n\right)\right)\right) - e_n$. This implies a first order condition for the lobby of
-\begin{equation}
-	\frac{\partial \pi(\tau^n)}{\partial \tau^n}\frac{\partial \tau^n}{\partial \ga} \frac{\partial \ga}{\partial e_n} = 1
-  \label{eq:lobtw}
-\end{equation}
-That is, the lobby equates the expected marginal increase in profits with its marginal payment.
-
-Because profits are increasing in the tariff, trade war tariffs are increasing in the weight attached to the profits of the import-competing industry. This can be seen by rearranging Equation~\ref{eq:lobtw} as 
-\begin{equation}
-  \frac{\partial \tau^n}{\partial \ga} = \frac{1}{\frac{\partial \pi(\tau^n)}{\partial \tau^n} \frac{\partial \ga}{\partial e_n}}
-	\label{eq:lem1}
-\end{equation}
-since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c} and profits are increasing in the tariff. This expression demonstrates that the second order condition for the legislature's problem is always satisfied. By the implicit function theorem, $\frac{\partial \tau^n}{\partial \ga} = -\frac{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \ga}}{\frac{\partial \text{Equation}~\ref{eq:legfoc}}{\partial \tau^n}} = -\frac{\frac{\partial \pi(\tau^n)}{\partial \tau^n}}{SOC}$ where ``SOC'' is the second derivative of the legislature's objective function that should be everywhere negative. Setting this expression equal to Equation~\ref{eq:lem1}, the second order condition must be satisfied since $\frac{\partial \ga}{\partial e_n}$ is positive by Assumption~\ref{as:ga_c}.
+To understand the government's decision about whether to renew a temporary trade barrier, I first examine the lobby's incentives.
 
 
 \bigskip
