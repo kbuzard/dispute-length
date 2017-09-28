@@ -179,12 +179,6 @@ Finally, I assume that an external authority can ensure enforcement of the agree
 \section{Main Results}
 \label{sec:main}
 
-\textbf{ADD IN NARRATIVE DIRECTION}
-
-To understand the government's decision about whether to renew a temporary trade barrier, I first examine the lobby's incentives.
-
-\vskip1in
-
 The government agency will renew the antidumping duty if the median actor's utility from the antidumping duty is higher than his utility from the trade agreement tariffs, i.e. if
 \begin{equation}
   W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right)
@@ -193,34 +187,25 @@ The government agency will renew the antidumping duty if the median actor's util
   
 The outcome of the decision on whether or not to renew the antidumping duties is not known to \textit{any} player until the uncertainty over the identity of the median governmental actor is resolved at the moment the decision is made. I represent the probability that antidumping duties are renewed as:
 \begin{multline}
-  b(e,\bta,\btad) = \expect_{\ga|e} \bm{1} [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) ] \\ = \Pr [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) | e]
+  r(e,\bta,\btad) = \expect_{\ga|e} \bm{1} [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) ] \\ = \Pr [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) | e]
   \label{eq:b}
 \end{multline}
 
-We are now in a position to examine the governments's decision more closely. Of central concern is how the probability that the government agency will renew the antidumping duties varies with lobbying effort: 
-
-\begin{lemma}
-  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
-  \label{res:bincC}
-\end{lemma}
-
-\noindent All proofs are in the Appendix. Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and thus more likely to break the trade agreement. 
-
-The lobby chooses its level of effort as a function of $\bta$, given the implications of that choice on the legislature's probability of breaking the agreement. The lobby maximizes probability-weighted profits net of effort:
+The lobby chooses its level of effort as a function of the trade agreement tariffs and the antidumping duties, given the implications of that choice on the government agency's probability of breaking the agreement. The lobby maximizes probability-weighted profits net of effort:
 \[
-  \max_{e} b(e,\bta) \left[\pi(\tau^n) - e_n \right] + [1 - b(e,\bta)] \pi(\tau^a) - e
+  \max_{e} r(e,\bta,\btad) \pi(\tau^{ad}) + [1 - r(e,\bta,\btad)] \pi(\tau^a) - e
 \]
 The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of provoking the trade war:
 \begin{equation}
-	\frac{\partial b(e,\bta)}{\partial e} \left[ \pi(\tau^n) -e_n - \pi(\tau^a) \right] = 1 
+	\frac{\partial r(e,\bta,\btad)}{\partial e} \left[ \pi(\tau^{ad})  - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
 Assumption [old assumption3] and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
   \begin{equation}
-	  \frac{\partial b(0,\bta)}{\partial e} \left[ \pi(\tau^n) -e_n- \pi(\tau^a) \right] > 1.
+	  \frac{\partial r(0,\bta)}{\partial e} \left[ \pi(\tau^{ad}) - \pi(\tau^a) \right] > 1.
 		\label{ine:lobint}	
   \end{equation}
-If the executives were to set $\tau^a = \tau^n$, there would be no incentive for the lobby to make a positive contribution. There are some other cases in which it is in the executives' interest to set trade agreement tariffs so as to disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
+If the executives were to set $\tau^{ad} = \tau^a$, there would be no incentive for the lobby to make a positive contribution. There are some other cases in which it is in the executives' interest to set trade agreement tariffs so as to disengage the lobby. The following results only hold when the marginal impact of the first lobbying dollar on the break probability is sufficiently high to make engaging in the political process worthwhile for the lobby.
   
 \begin{result}
   When the trade agreement remains in force with positive probability, lobbying effort is weakly decreasing in trade agreement tariffs.
@@ -229,7 +214,7 @@ If the executives were to set $\tau^a = \tau^n$, there would be no incentive for
 
 \noindent Raising the trade agreement tariffs decreases the benefit of a break in the trade agreement by raising trade agreement profits. This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
 
-I represent the probability that the trade agreement will be broken as $B(\bta)=b(e(\bta),\bta)$ where $e(\bta)$ is the best response function implicit in Equation \ref{eq:lobbyfoc}, the lobby's first order condition.
+I represent the probability that the trade agreement will be broken as $R(\bta)=r(e(\bta),\bta)$ where $e(\bta)$ is the best response function implicit in Equation \ref{eq:lobbyfoc}, the lobby's first order condition.
 
 To solve for the trade agreement tariffs, one must maximize the following modified version of Equation ``Joint Value'' (removed):
 \begin{equation}
@@ -241,11 +226,11 @@ where $\bm{W_E}(\cdot)$ is the sum of the home and foreign executives' utilities
 Of central concern is how the break probability varies as both a direct and indirect function of $\bta$ given the lobby's optimal response. Result~\ref{res:bcomB} takes into account both the direct and indirect effects:
 
 \begin{result}
-	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial B(\bta)}{\partial  \tau^a} + \frac{\partial B(\bta)}{\partial  \tau^{*a}} \leq 0$).
+	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} + \frac{\partial R(\bta)}{\partial  \tau^{*a}} \leq 0$).
 	\label{res:bcomB}
 \end{result}
 
-\noindent When the executives raise $\bta$ the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $B(\bta)$ indirectly (Result~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the legislature's preferred tariff further (Lemma~\ref{res:leg_a}). Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
+\noindent When the executives raise $\bta$ the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $R(\bta)$ indirectly (Result~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the legislature's preferred tariff further (Lemma~\ref{res:leg_a}). Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
 
 We are now prepared to examine the executives' optimal choice of trade agreement tariffs. Because joint executive welfare is decreasing in trade agreement tariffs for $\bta$ above the executives' preferred tariffs, we have the following fundamental feature of the executives' problem:
 \begin{lemma}
@@ -289,6 +274,15 @@ The relationship between $\tau^a$ and break probability is more complex. For any
   \label{res:leg_a}
 \end{lemma}
 
+
+We are now in a position to examine the governments's decision more closely. Of central concern is how the probability that the government agency will renew the antidumping duties varies with lobbying effort: 
+
+\begin{lemma}
+  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
+  \label{res:bincC}
+\end{lemma}
+
+\noindent All proofs are in the Appendix. Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
 
 
