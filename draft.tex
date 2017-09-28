@@ -60,7 +60,7 @@ bookmarksopen=true]{hyperref}
 \newcommand{\expect}{\mathbb{E}}
 \newcommand{\Bt}{B(\bm{\tau^a})}
 \newcommand{\bta}{\bm{\tau^a}}
-\newcommand{\btad}{\bm{\tau^{ad}}}
+\newcommand{\tad}{\tau^{ad}}
 \newcommand{\bte}{\bm{\tau^E}}
 \newcommand{\btn}{\bm{\tau^n}}
 \newcommand{\ga}{\gamma}
@@ -130,7 +130,7 @@ In the home country, there is a government agency that has the power to renew (o
 	\caption{Extensive Form\label{fig:ext}}
 \end{figure}
 
-Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and levels of antidumping duties $\btad = \left(\tau^{ad},\tau^{*ad}\right)$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the antidumping duties by choice of lobbying effort $e$. 
+Figure~\ref{fig:ext} illustrates the timing of the game. Taking the trade-agreement tariffs $\bta = \left(\tau^a,\tau^{*a}\right)$\footnote{I use the convention throughout of representing a vector of tariffs for both countries $(\tau,\tau^*)$ as a single bold $\bm{\tau}$.} and the antidumping duty level $\tad$ as given, the import-competing firms jointly attempt to persuade the government agency to renew the antidumping duties by choice of lobbying effort $e$. 
 
 After this, uncertainty about the government agency's preferences is resolved. All players simultaneously observe the realization of the random variable $\ta$ that represents this uncertainty. The political stage concludes with the agency making a choice to renew the antidumping duties or let them expire. In the event that the antidumping duties expire, the home country's trade policy reverts to the trade agreement tariff $\tau^a$. Finally, producers and consumers make their decisions.
 
@@ -181,23 +181,23 @@ Finally, I assume that an external authority can ensure enforcement of the agree
 
 The government agency will renew the antidumping duty if the median actor's utility from the antidumping duty is higher than his utility from the trade agreement tariffs, i.e. if
 \begin{equation}
-  W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right)
+  W_G(\tad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right)
   \label{eq:lwcg}
 \end{equation}
   
 The outcome of the decision on whether or not to renew the antidumping duties is not known to \textit{any} player until the uncertainty over the identity of the median governmental actor is resolved at the moment the decision is made. I represent the probability that antidumping duties are renewed as:
 \begin{multline}
-  r(e,\bta,\btad) = \expect_{\ga|e} \bm{1} [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) ] \\ = \Pr [ W_G(\btad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) | e]
+  r(e,\bta,\tad) = \expect_{\ga|e} \bm{1} [ W_G(\tad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) ] \\ = \Pr [ W_G(\tad,\ga(e,\ve)) > W_G\left(\bta,\ga(e,\ve)\right) | e]
   \label{eq:b}
 \end{multline}
 
 The lobby chooses its level of effort as a function of the trade agreement tariffs and the antidumping duties, given the implications of that choice on the government agency's probability of breaking the agreement. The lobby maximizes probability-weighted profits net of effort:
 \[
-  \max_{e} r(e,\bta,\btad) \pi(\tau^{ad}) + [1 - r(e,\bta,\btad)] \pi(\tau^a) - e
+  \max_{e} r(e,\bta,\tad) \pi(\tau^{ad}) + [1 - r(e,\bta,\tad)] \pi(\tau^a) - e
 \]
 The first order condition shows that the lobby balances the cost of an extra dollar of expenditure with the higher profits from a trade war weighted by the increase in the probability of provoking the trade war:
 \begin{equation}
-	\frac{\partial r(e,\bta,\btad)}{\partial e} \left[ \pi(\tau^{ad})  - \pi(\tau^a) \right] = 1 
+	\frac{\partial r(e,\bta,\tad)}{\partial e} \left[ \pi(\tau^{ad})  - \pi(\tau^a) \right] = 1 
 	\label{eq:lobbyfoc}
 \end{equation}
 Assumption [old assumption3] and Result~\ref{res:bincC} ensure the second order condition. To guarantee an interior solution, we need
