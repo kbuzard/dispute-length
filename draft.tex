@@ -211,29 +211,13 @@ I represent the total probability that the antidumping duties will be renewed as
 
 
 \bigskip
-\subsection{Foreign Trade Agreement Tariffs}
-\label{sec:foreign}
-
-
-
-
-Turning to the effects of the trade-agreement tariffs on the probability that the agreement will be abrogated, it is straightforward that the legislature always prefers lower levels of the foreign tariff:
-\begin{lemma}
-  Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly increasing in $\tau^{*a}$.
-  \label{lem:leg_astar}
-\end{lemma}
-
-The lower world price for home's export good has a larger negative effect on profits than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
-
-
-\bigskip
 \subsection{Home Trade Agreement Tariffs}
 \label{sec:home}
 
-The relationship between $\tau^a$ and break probability is more complex. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
+Let's look first at the direct effect of changing $\tau^a$ on the renewal probability. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
-  Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly decreasing in $\tau^a$.
+  The direct effect of the home trade agreement tariff on the probability the legislature renews the antidumping duty is negative.
   \label{res:leg_a}
 \end{lemma}
 
@@ -265,6 +249,20 @@ Of central concern is how the break probability varies as both a direct and indi
 \noindent When the executives raise $\bta$ the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $R(\bta)$ indirectly (Result~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the legislature's preferred tariff further (Lemma~\ref{res:leg_a}). Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
 
 
+\bigskip
+\subsection{Foreign Trade Agreement Tariffs}
+\label{sec:foreign}
+
+
+Turning to the effects of the trade-agreement tariffs on the probability that the agreement will be abrogated, it is straightforward that the legislature always prefers lower levels of the foreign tariff:
+\begin{lemma}
+  Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly increasing in $\tau^{*a}$.
+  \label{lem:leg_astar}
+\end{lemma}
+
+The lower world price for home's export good has a larger negative effect on profits than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
+
+
 
 
 \section{Conclusion}
@@ -276,8 +274,32 @@ Of central concern is how the break probability varies as both a direct and indi
 
 \section{Appendix}
 \label{sec:appendix}
-\noindent \textbf{\hypertarget{Pr_bincC}{Proof of Result~\ref{res:bincC}}}:\\
+\noindent \textbf{\hypertarget{Pr_leg_a}{Proof of Lemma~\ref{res:leg_a}}}:
 
+Substituting from Equation~\ref{eq:ml}, Equation~\ref{eq:b} can be re-written as
+\begin{multline}  
+  r(e,\bta,\tad) = \Pr [ \mathit{CS}_X(\tad) + \ga(e,\ve) \cdot \pi_X(\tad) + \mathit{CS}_Y(\tau^{*a}) + \pi_Y(\tau^{*a}) + \mathit{TR}(\tad) >  \\ \mathit{CS}_X(\tau^a) + \ga(e,\ve) \cdot \pi_X(\tau^a) + \mathit{CS}_Y(\tau^{*a}) + \pi_Y(\tau^{*a}) + \mathit{TR}(\tau^a) ]
+\end{multline}
+Rearranging, we have $r(e_b,\bta,\tad) = $
+\begin{multline}  
+  \textstyle \Pr \Big[ \frac{\mathit{CS}_X(\tad) + \pi_X(\tad) + \mathit{CS}_Y(\tau^{*a}) + \pi_Y(\tau^{*a}) + \mathit{TR}(\tad)  -\mathit{CS}_X(\tau^a) - \pi_X(\tau^a) - \mathit{CS}_Y(\tau^{*a}) - \pi_Y(\tau^{*a}) - \mathit{TR}(\tau^a)}{\pi_X(\tau^a) - \pi_X(\tad)} + 1 \\ \textstyle < \ga(e,\ve) \Big]
+  \label{eq:b_ex}
+\end{multline}
+
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $\left[ W(\tad,\tau^{*a})-W(\bta)\right]$ (for the change in social welfare), derivative of this quantity with respect to $\tau^{a}$ is 
+\begin{equation}
+  \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - \left[ W(\tad,\tau^{*a})-W(\bta)\right] \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \label{appex:a}
+\end{equation}
+
+\noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
+
+Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $W(\tad,\tau^{*a})-W(\bta)$ is always negative, whereas profits are increasing in $\tau^a$, so the second summand is positive everywhere (inclusive of the leading negative sign). With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
+
+It is also positive over the remaining $(\tau^O,\tad)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a} \left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always positive (inclusive of the leading negative sign).
+
+Since the denominator is a squared term of a strictly positive quantity, the expression in Equation~\ref{appex:a} is positive for all $\tau^{a}$.
+$\hfill\blacksquare$
 
 
 \section{References}
