@@ -221,25 +221,23 @@ Let's look first at the direct effect of changing $\tau^a$ on the renewal probab
   \label{res:leg_a}
 \end{lemma}
 
+All proofs are in the Appendix. 
 
-We are now in a position to examine the governments's decision more closely. Of central concern is how the probability that the government agency will renew the antidumping duties varies with lobbying effort: 
+The indirect effect is made up of two parts: the impact of raising the home trade agreement tariff on lobbying effort, and the impact of lobbying effort on the renewal probability. Starting with the question of how lobbying effort varies in the home trade agreement tariff, notice that raising the trade agreement tariffs decreases the benefit of a renewal in the trade agreement by raising trade agreement profits. This implies that lobbying effort is lower when trade agreement tariffs are higher.
+
+\begin{lemma}
+  Lobbying effort is weakly decreasing in trade agreement tariffs.
+  \label{res:lobby}
+\end{lemma}
+
+Turning to the second component of the indirect effect, it's useful to note that lobbying affects only the weight the government agency places on the profits of the import-competing industry. These profits are higher under antidumping duties than under the trade agreement tariff. Assumption~\ref{as:ga_c} implies that the government becomes more favorably inclined---albeit at a decreasing rate---toward the higher antidumping duties and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
 \begin{lemma}
   The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
   \label{res:bincC}
 \end{lemma}
 
-\noindent All proofs are in the Appendix. Lobbying affects only the weight the legislature places on the profits of the import-competing industry. These profits are higher in a trade war than a trade agreement. Assumption~\ref{as:ga_c} implies that the legislature becomes more favorably inclined---albeit at a decreasing rate---toward the high trade-war tariff and associated profits as lobbying increases and thus more likely to break the trade agreement. 
-
-
-\begin{result}
-  When the trade agreement remains in force with positive probability, lobbying effort is weakly decreasing in trade agreement tariffs.
-  \label{res:lobby}
-\end{result}
-
-\noindent Raising the trade agreement tariffs decreases the benefit of a break in the trade agreement by raising trade agreement profits. This key result implies that the executives can reduce lobbying effort by setting higher tariffs in their trade agreement. We will see in the next section how this shapes the executives' joint decision. 
-
-Of central concern is how the break probability varies as both a direct and indirect function of $\bta$ given the lobby's optimal response. Result~\ref{res:bcomB} takes into account both the direct and indirect effects:
+Result~\ref{res:bcomB} combines the direct and indirect effects to get the total effect of trade agreement tariffs on the renewal probability.
 
 \begin{result}
 	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} + \frac{\partial R(\bta)}{\partial  \tau^{*a}} \leq 0$).
@@ -286,20 +284,44 @@ Rearranging, we have $r(e_b,\bta,\tad) = $
   \label{eq:b_ex}
 \end{multline}
 
-The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $\left[ W(\tad,\tau^{*a})-W(\bta)\right]$ (for the change in social welfare), derivative of this quantity with respect to $\tau^{a}$ is 
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\tad,\bta)$, the derivative of this quantity with respect to $\tau^{a}$ is 
 \begin{equation}
-  \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - \left[ W(\tad,\tau^{*a})-W(\bta)\right] \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - Z(\tad,\bta) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
   \label{appex:a}
 \end{equation}
 
 \noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
 
-Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $W(\tad,\tau^{*a})-W(\bta)$ is always negative, whereas profits are increasing in $\tau^a$, so the second summand is positive everywhere (inclusive of the leading negative sign). With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
+Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $Z(\tad,\bta)$ is always negative, whereas profits are increasing in $\tau^a$, so the second summand is positive everywhere (inclusive of the leading negative sign). With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
 
 It is also positive over the remaining $(\tau^O,\tad)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a} \left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always positive (inclusive of the leading negative sign).
 
 Since the denominator is a squared term of a strictly positive quantity, the expression in Equation~\ref{appex:a} is positive for all $\tau^{a}$.
 $\hfill\blacksquare$
+
+
+\vskip.4in
+\noindent \textbf{\hypertarget{Pr_lobby}{Proof of Lemma~\ref{res:lobby}}}:\\
+Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
+  \[
+		\frac{\partial e}{\partial \tau^a} = - \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e}} = \frac{ \frac{\partial b}{\partial e} \frac{\partial \pi(\bta)}{\partial \tau^a} - \frac{\partial^2 b}{\partial e \partial \tau^a} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 b}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
+	\]
+Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 b}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
+
+Turning to the numerator: $\frac{\partial b}{\partial e_b}$ is positive and $\frac{\partial \pi(\bta)}{\partial \tau^a}$ is positive by construction so the first term is positive. 
+
+We can rewrite $\frac{\partial b(e,\bta)}{\partial  \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial Z(\tad,\bta)} \frac{\partial Z(\tad,\bta)}{\partial \tau^a} = - f_\ga \frac{\partial Z(\tad,\bta)}{\partial \tau^a}$, where $F_\ga (Z(\tad,\bta))$ is the CDF of $\ga$ and $f_\ga (Z(\tad,\bta))$ is the pdf of $\ga$ and $Z(\tad,\bta)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+	
+Then $\frac{\partial^2 b}{\partial e_b \partial \tau^a} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} \right) = 
+	   - f_\ga \frac{\partial^2 Z(\tad,\bta)}{\partial \tau^a \partial e} - [\frac{\partial Z(\tad,\bta)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\tad,\bta)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} $
+where the above equality holds because $Z(\tad,\bta)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\tad,\bta)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 b}{\partial e_b \partial \tau^a} \leq 0$. Thus $\frac{\partial e_b}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
+
+
+\vskip.4in
+\noindent \textbf{\hypertarget{Pr_bincC}{Proof of Result~\ref{res:bincC}}}:\\
+\noindent The left side of the inequality in Expression~\ref{eq:b_ex}, $Z(\tad,\bta)$, does not depend on $e$. Thus we have $r(e,\bta,\tad) = \Pr [Z < \ga(e,\ve) ] = 1 - F_{\ga}(\ga=Z)$ where $F_{\ga}(\ga=Z) = F_{\ta}(\ta=h^{-1}(\ga,e))$ by the Change of Variables Theorem and Assumption~\ref{as:ga_ta} with $\ga = h(e,\ta)$ giving the change of variable.
+
+Then $\frac{\partial b}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 b}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial b}{\partial e} \geq 0$ and $\frac{\partial^2 b}{\partial e^2} \leq 0$. $\hfill\blacksquare$
 
 
 \section{References}
