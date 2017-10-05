@@ -240,7 +240,7 @@ Turning to the second component of the indirect effect, it's useful to note that
 Result~\ref{res:bcomB} combines the direct and indirect effects to get the total effect of trade agreement tariffs on the renewal probability.
 
 \begin{result}
-	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} \leq 0$).
+	The total probability that the antidumping duties will be renewed is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} \leq 0$).
 	\label{res:bcomB}
 \end{result}
 
@@ -251,15 +251,13 @@ Result~\ref{res:bcomB} combines the direct and indirect effects to get the total
 \subsection{Foreign Trade Agreement Tariffs}
 \label{sec:foreign}
 
+Turning to the effect of the foreign trade agreement tariffs on the probability that the antidumping duties will be renewed, it is perhaps not surprising that there is no effect:
+\begin{result}
+  The total probability that the antidumping duties will be renewed is constant in the foreign trade agreement tariff.
+  \label{res:leg_astar}
+\end{result}
 
-Turning to the effects of the trade-agreement tariffs on the probability that the agreement will be abrogated, it is straightforward that the legislature always prefers lower levels of the foreign tariff:
-\begin{lemma}
-  Holding lobbying effort constant, the probability the legislature breaks a trade agreement is weakly increasing in $\tau^{*a}$.
-  \label{lem:leg_astar}
-\end{lemma}
-
-The lower world price for home's export good has a larger negative effect on profits than the positive effect on consumer surplus. The net effect of an increase in foreign trade-agreement tariffs on home legislative welfare is negative, leading to an increased probability that the trade agreement will be broken.
-
+Because the duties are a unilateral policy that we presume here are permissable under WTO rules, the decision to renew the duties or not does not change the level of the tariff applied by the foreign trading partner. That is, there is no incentive in terms of reciprocal treatment to deter the home government from renewing the duties.
 
 
 
@@ -304,29 +302,35 @@ $\hfill\blacksquare$
 \noindent \textbf{\hypertarget{Pr_lobby}{Proof of Lemma~\ref{res:lobby}}}:\\
 Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
   \[
-		\frac{\partial e}{\partial \tau^a} = - \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e}} = \frac{ \frac{\partial b}{\partial e} \frac{\partial \pi(\bta)}{\partial \tau^a} - \frac{\partial^2 b}{\partial e \partial \tau^a} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 b}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
+		\frac{\partial e}{\partial \tau^a} = - \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e}} = \frac{ \frac{\partial r}{\partial e} \frac{\partial \pi(\bta)}{\partial \tau^a} - \frac{\partial^2 r}{\partial e \partial \tau^a} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
-Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 b}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
+Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 r}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
 
-Turning to the numerator: $\frac{\partial b}{\partial e_b}$ is positive and $\frac{\partial \pi(\bta)}{\partial \tau^a}$ is positive by construction so the first term is positive. 
+Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial \pi(\bta)}{\partial \tau^a}$ is positive by construction so the first term is positive. 
 
-We can rewrite $\frac{\partial b(e,\bta)}{\partial  \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial Z(\tad,\bta)} \frac{\partial Z(\tad,\bta)}{\partial \tau^a} = - f_\ga \frac{\partial Z(\tad,\bta)}{\partial \tau^a}$, where $F_\ga (Z(\tad,\bta))$ is the CDF of $\ga$ and $f_\ga (Z(\tad,\bta))$ is the pdf of $\ga$ and $Z(\tad,\bta)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+We can rewrite $\frac{\partial r(e,\bta)}{\partial  \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} = -\frac{\partial F_\ga (Z(\tad,\bta))}{\partial Z(\tad,\bta)} \frac{\partial Z(\tad,\bta)}{\partial \tau^a} = - f_\ga \frac{\partial Z(\tad,\bta)}{\partial \tau^a}$, where $F_\ga (Z(\tad,\bta))$ is the CDF of $\ga$ and $f_\ga (Z(\tad,\bta))$ is the pdf of $\ga$ and $Z(\tad,\bta)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
-Then $\frac{\partial^2 b}{\partial e_b \partial \tau^a} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} \right) = 
+Then $\frac{\partial^2 r}{\partial e \partial \tau^a} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\tad,\bta))}{\partial \tau^a} \right) = 
 	   - f_\ga \frac{\partial^2 Z(\tad,\bta)}{\partial \tau^a \partial e} - [\frac{\partial Z(\tad,\bta)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\tad,\bta)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\tad,\bta)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\tad,\bta)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 b}{\partial e_b \partial \tau^a} \leq 0$. Thus $\frac{\partial e_b}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
+where the above equality holds because $Z(\tad,\bta)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\tad,\bta)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tau^a} \leq 0$. Thus $\frac{\partial e}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
 
 
 \vskip.4in
 \noindent \textbf{\hypertarget{Pr_bincC}{Proof of Lemma~\ref{res:bincC}}}:\\
 \noindent The left side of the inequality in Expression~\ref{eq:b_ex}, $Z(\tad,\bta)$, does not depend on $e$. Thus we have $r(e,\bta,\tad) = \Pr [Z < \ga(e,\ve) ] = 1 - F_{\ga}(\ga=Z)$ where $F_{\ga}(\ga=Z) = F_{\ta}(\ta=h^{-1}(\ga,e))$ by the Change of Variables Theorem and Assumption~\ref{as:ga_ta} with $\ga = h(e,\ta)$ giving the change of variable.
 
-Then $\frac{\partial b}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 b}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial b}{\partial e} \geq 0$ and $\frac{\partial^2 b}{\partial e^2} \leq 0$. $\hfill\blacksquare$
+Then $\frac{\partial r}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 r}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial r}{\partial e} \leq 0$ and $\frac{\partial^2 r}{\partial e^2} \leq 0$. $\hfill\blacksquare$
 
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_bcomB}{Proof of Result~\ref{res:bcomB}}}: \\
-$	\frac{\partial R(\bta)}{\partial \tau^a} = \frac{\partial b}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial b}{\partial \tau^a}$. $\frac{\partial b}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial b}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+$	\frac{\partial R(\bta)}{\partial \tau^a} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial r}{\partial \tau^a}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial r}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+
+
+\vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_astar}{Proof of Result~\ref{res:leg_astar}}}: \\
+$	\frac{\partial R(\bta)}{\partial \tau^{*a}} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^{*a}} + \frac{\partial r}{\partial \tau^{*a}}$. $\frac{\partial r}{\partial \tau^{*a}}$ is zero because Expression~\ref{eq:b_ex}, after simplification, is not a function of $\tau^{*a}$. $\frac{\partial e}{\partial \tau^{*a}}$ is also zero because Equation~\ref{eq:lobbyfoc} is not a function of $\tau^{*a}$. Thus the entire expression is zero. $\hfill\blacksquare$
+
 
 \section{References}
 
