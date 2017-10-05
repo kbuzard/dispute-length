@@ -233,18 +233,18 @@ The indirect effect is made up of two parts: the impact of raising the home trad
 Turning to the second component of the indirect effect, it's useful to note that lobbying affects only the weight the government agency places on the profits of the import-competing industry. These profits are higher under antidumping duties than under the trade agreement tariff. Assumption~\ref{as:ga_c} implies that the government becomes more favorably inclined---albeit at a decreasing rate---toward the higher antidumping duties and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
 \begin{lemma}
-  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial b}{\partial e} \geq 0, \ \frac{\partial^2 b}{\partial e^2} \leq 0  \right)$.
+  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial r}{\partial e} \geq 0, \ \frac{\partial^2 r}{\partial e^2} \leq 0  \right)$.
   \label{res:bincC}
 \end{lemma}
 
 Result~\ref{res:bcomB} combines the direct and indirect effects to get the total effect of trade agreement tariffs on the renewal probability.
 
 \begin{result}
-	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} + \frac{\partial R(\bta)}{\partial  \tau^{*a}} \leq 0$).
+	The total probability that the trade agreement will be broken is decreasing in $\bta$ (i.e. $\frac{\partial R(\bta)}{\partial  \tau^a} \leq 0$).
 	\label{res:bcomB}
 \end{result}
 
-\noindent When the executives raise $\bta$ the legislature becomes less likely to abrogate the agreement, for three reasons. First, the legislature prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $R(\bta)$ indirectly (Result~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the legislature's preferred tariff further (Lemma~\ref{res:leg_a}). Thus, beyond promising a lower tariff from the trading partner, we can think of the trade agreement as a sort of political commitment device that can be used to reduce political pressure and therefore get the legislature to maintain a lower tariff than it otherwise would.
+\noindent When $\tau^a$ is higher, the government agency becomes less likely to renew the antidumping duties, for three reasons. First, the government prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $R(\bta)$ indirectly (Lemma~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the government's preferred tariff further (Lemma~\ref{res:bincC}).
 
 
 \bigskip
@@ -318,11 +318,15 @@ where the above equality holds because $Z(\tad,\bta)$ does not depend on $e$. Th
 
 
 \vskip.4in
-\noindent \textbf{\hypertarget{Pr_bincC}{Proof of Result~\ref{res:bincC}}}:\\
+\noindent \textbf{\hypertarget{Pr_bincC}{Proof of Lemma~\ref{res:bincC}}}:\\
 \noindent The left side of the inequality in Expression~\ref{eq:b_ex}, $Z(\tad,\bta)$, does not depend on $e$. Thus we have $r(e,\bta,\tad) = \Pr [Z < \ga(e,\ve) ] = 1 - F_{\ga}(\ga=Z)$ where $F_{\ga}(\ga=Z) = F_{\ta}(\ta=h^{-1}(\ga,e))$ by the Change of Variables Theorem and Assumption~\ref{as:ga_ta} with $\ga = h(e,\ta)$ giving the change of variable.
 
 Then $\frac{\partial b}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 b}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial b}{\partial e} \geq 0$ and $\frac{\partial^2 b}{\partial e^2} \leq 0$. $\hfill\blacksquare$
 
+
+\vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_bcomB}{Proof of Result~\ref{res:bcomB}}}: \\
+$	\frac{\partial R(\bta)}{\partial \tau^a} = \frac{\partial b}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial b}{\partial \tau^a}$. $\frac{\partial b}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial b}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
 
 \section{References}
 
