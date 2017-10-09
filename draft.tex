@@ -191,7 +191,7 @@ The outcome of the decision on whether or not to renew the antidumping duties is
   \label{eq:b}
 \end{multline}
 
-The lobby chooses its level of effort as a function of the trade agreement tariffs and the antidumping duties, given the implications of that choice on the government agency's probability of breaking the agreement. In effect, the lobby maximizes probability-weighted profits net of effort:
+The lobby chooses its level of effort as a function of the trade agreement tariffs and the antidumping duties, given the implications of that choice on the government agency's probability of renewing the duties. In effect, the lobby maximizes probability-weighted profits net of effort:
 \[
   \max_{e} r(e,\bta,\tad) \pi(\tau^{ad}) + [1 - r(e,\bta,\tad)] \pi(\tau^a) - e
 \]
@@ -214,7 +214,7 @@ I represent the total probability that the antidumping duties will be renewed as
 \subsection{Home Trade Agreement Tariffs}
 \label{sec:home}
 
-Let's look first at the direct effect of changing $\tau^a$ on the renewal probability. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
+Let's look first at the direct effect of changing $\tau^a$ on the renewal probability. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to the antidumping duties being re-approved, implying a high renewal probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the renewal probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
   The direct effect of the home trade agreement tariff on the probability the government renews the antidumping duty is negative. \hyperlink{Pr_leg_a}{Proof}
@@ -230,7 +230,7 @@ The indirect effect is made up of two parts: the impact of raising the home trad
   \label{res:lobby}
 \end{lemma}
 
-Turning to the second component of the indirect effect, it's useful to note that lobbying affects only the weight the government agency places on the profits of the import-competing industry. These profits are higher under antidumping duties than under the trade agreement tariff. Assumption~\ref{as:ga_c} implies that the government becomes more favorably inclined---albeit at a decreasing rate---toward the higher antidumping duties and associated profits as lobbying increases and thus more likely to break the trade agreement. 
+Turning to the second component of the indirect effect, it's useful to note that lobbying affects only the weight the government agency places on the profits of the import-competing industry. These profits are higher under antidumping duties than under the trade agreement tariff. Assumption~\ref{as:ga_c} implies that the government becomes more favorably inclined---albeit at a decreasing rate---toward the higher antidumping duties and associated profits as lobbying increases and thus more likely to renew the antidumping duties. 
 
 \begin{lemma}
   The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial r}{\partial e} \geq 0, \ \frac{\partial^2 r}{\partial e^2} \leq 0  \right)$. \hyperlink{Pr_bincC}{Proof}
@@ -330,7 +330,7 @@ Rearranging, we have $r(e_b,\bta,\tad) = $
   \label{eq:b_ex}
 \end{multline}
 
-The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the renewal probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
 \begin{equation}
   \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - Z(\bta,\tad) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
   \label{appex:a}
@@ -388,7 +388,7 @@ $	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial 
 \vskip.4in
 \noindent \textbf{\hypertarget{Pr_pi_dir}{Proof of Lemma~\ref{res:pi_dir}}}:
 
-The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to a positive shift in the $\pi(\cdot)$ function; to show that the renewal probability is increasing in such a positive shift, I must demonstrate that this derivative is negative. The derivative is 
 \begin{equation}
   \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - Z(\bta,\tad) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
   \label{appex:pi}
