@@ -381,12 +381,12 @@ $	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial 
 
 
 \vskip.4in
-\noindent \textbf{\hypertarget{Pr_leg_a}{Proof of Lemma~\ref{res:pi_dir}}}:
+\noindent \textbf{\hypertarget{Pr_pi_dir}{Proof of Lemma~\ref{res:pi_dir}}}:
 
 The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the break probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
 \begin{equation}
   \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - Z(\bta,\tad) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
-  \label{appex:a}
+  \label{appex:pi}
 \end{equation}
 
 \noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
@@ -400,7 +400,7 @@ $\hfill\blacksquare$
 
 
 \vskip.4in
-\noindent \textbf{\hypertarget{Pr_lobby}{Proof of Lemma~\ref{res:pi_indir}}}:\\
+\noindent \textbf{\hypertarget{Pr_pi_indir}{Proof of Lemma~\ref{res:pi_indir}}}:\\
 Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
   \[
 		\frac{\partial e}{\partial \tau^a} = - \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e}} = \frac{ \frac{\partial r}{\partial e} \frac{\partial \pi(\bta)}{\partial \tau^a} - \frac{\partial^2 r}{\partial e \partial \tau^a} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
@@ -417,7 +417,7 @@ where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. Th
 
 
 \vskip.4in	  	
-\noindent \textbf{\hypertarget{Pr_bcomB}{Proof of Result~\ref{res:pi_total}}}: \\
+\noindent \textbf{\hypertarget{Pr_pi_total}{Proof of Result~\ref{res:pi_total}}}: \\
 $	\frac{\partial R(\bta,\tad)}{\partial \tau^a} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial r}{\partial \tau^a}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial r}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
 
 
