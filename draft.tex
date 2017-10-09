@@ -217,7 +217,7 @@ I represent the total probability that the antidumping duties will be renewed as
 Let's look first at the direct effect of changing $\tau^a$ on the renewal probability. For any effort level $e$, when the trade agreement tariff is very low, only a small set of realizations of $\ta$ associated with the lowest values of $\ga(e,\ta)$ will lead to approval of the trade agreement, implying a high break probability. As the trade agreement tariff rises, larger values of $\ga(e,\ta)$ are consistent with approving the trade agreement, so the set of $\ta$'s that lead to trade agreement approval is larger. That is, the break probability decreases as $\tau^a$ increases. 
 
 \begin{lemma}
-  The direct effect of the home trade agreement tariff on the probability the government renews the antidumping duty is negative.
+  The direct effect of the home trade agreement tariff on the probability the government renews the antidumping duty is negative. \hyperlink{Pr_leg_a}{Proof}
   \label{res:leg_a}
 \end{lemma}
 
@@ -226,21 +226,21 @@ All proofs are in the Appendix.
 The indirect effect is made up of two parts: the impact of raising the home trade agreement tariff on lobbying effort, and the impact of lobbying effort on the renewal probability. Starting with the question of how lobbying effort varies in the home trade agreement tariff, notice that raising the trade agreement tariffs decreases the benefit of a renewal in the trade agreement by raising trade agreement profits. This implies that lobbying effort is lower when trade agreement tariffs are higher.
 
 \begin{lemma}
-  Lobbying effort is weakly decreasing in trade agreement tariffs.
+  Lobbying effort is weakly decreasing in trade agreement tariffs. \hyperlink{Pr_lobby}{Proof}
   \label{res:lobby}
 \end{lemma}
 
 Turning to the second component of the indirect effect, it's useful to note that lobbying affects only the weight the government agency places on the profits of the import-competing industry. These profits are higher under antidumping duties than under the trade agreement tariff. Assumption~\ref{as:ga_c} implies that the government becomes more favorably inclined---albeit at a decreasing rate---toward the higher antidumping duties and associated profits as lobbying increases and thus more likely to break the trade agreement. 
 
 \begin{lemma}
-  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial r}{\partial e} \geq 0, \ \frac{\partial^2 r}{\partial e^2} \leq 0  \right)$.
+  The probability that the government agency renews the antidumping duties is increasing and concave in lobbying effort $\left(\text{i.e. } \frac{\partial r}{\partial e} \geq 0, \ \frac{\partial^2 r}{\partial e^2} \leq 0  \right)$. \hyperlink{Pr_bincC}{Proof}
   \label{res:bincC}
 \end{lemma}
 
 Result~\ref{res:bcomB} combines the direct and indirect effects to get the total effect of trade agreement tariffs on the renewal probability.
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is decreasing in $\tau^a$ (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \tau^a} \leq 0$).
+	The total probability that the antidumping duties will be renewed is decreasing in $\tau^a$ (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \tau^a} \leq 0$). \hyperlink{Pr_bcomB}{Proof}
 	\label{res:bcomB}
 \end{result}
 
@@ -253,7 +253,7 @@ Result~\ref{res:bcomB} combines the direct and indirect effects to get the total
 
 Turning to the effect of the foreign trade agreement tariffs on the probability that the antidumping duties will be renewed, it is perhaps not surprising that there is no effect:
 \begin{result}
-  The total probability that the antidumping duties will be renewed is constant in the foreign trade agreement tariff.
+  The total probability that the antidumping duties will be renewed is constant in the foreign trade agreement tariff. \hyperlink{Pr_astar}{Proof}
   \label{res:leg_astar}
 \end{result}
 
@@ -267,7 +267,7 @@ Because the duties are a unilateral policy that we presume here are permissable 
 We next examine the weight the median decision-maker places on the profits of the import-competing sector. The value of the political weight $\ga(e,\ta)$ is endogenous to many of the decisions underpinning the equilibrium, but here we examine the effect of an exogenous shift in the weighting function itself, $\ga(\cdot,\ta)$. We start again with the direct effect:
 
 \begin{lemma}
-  The direct effect of exogenous positive shifts in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive.
+  The direct effect of exogenous positive shifts in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_eg}{Proof}
 	  \label{res:eg}
 \end{lemma}
 
@@ -288,19 +288,19 @@ In accordance with intuition, if there is a shift in the political weighting fun
 
 
 \begin{lemma}
-  The direct effect of an increase in the import competing sector's profitability on the probability the government renews the antidumping duty is positive.
+  The direct effect of an increase in the import competing sector's profitability on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_pi_dir}{Proof}
   \label{res:pi_dir}
 \end{lemma}
 
 
 \begin{lemma}
-  Lobbying effort is weakly increasing in the import competing sector's profitability.
+  Lobbying effort is weakly increasing in the import competing sector's profitability. \hyperlink{Pr_pi_indir}{Proof}
   \label{res:pi_indir}
 \end{lemma}
 
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is increasing in $\pi$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \pi} \geq 0$).
+	The total probability that the antidumping duties will be renewed is increasing in $\pi$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \pi} \geq 0$). \hyperlink{Pr_pi_total}{Proof}
 	\label{res:pi_total}
 \end{result}
 
@@ -373,6 +373,11 @@ Then $\frac{\partial r}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_bcomB}{Proof of Result~\ref{res:bcomB}}}: \\
 $	\frac{\partial R(\bta,\tad)}{\partial \tau^a} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial r}{\partial \tau^a}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial r}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+
+
+\vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_eg}{Proof of Result~\ref{res:eg}}}: \\
+
 
 
 \vskip.4in	  	
