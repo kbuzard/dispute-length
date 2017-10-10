@@ -267,11 +267,24 @@ Because the duties are a unilateral policy that we presume here are permissable 
 We next examine the weight the median decision-maker places on the profits of the import-competing sector. The value of the political weight $\ga(e,\ta)$ is endogenous to many of the decisions underpinning the equilibrium, but here we examine the effect of an exogenous shift in the weighting function itself, $\ga(\cdot,\ta)$. We start again with the direct effect:
 
 \begin{lemma}
-  The direct effect of exogenous positive shifts in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_eg}{Proof}
-	  \label{res:eg}
+  The direct effect of exogenous positive shifts in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_ga_dir}{Proof}
+	  \label{res:ga_dir}
 \end{lemma}
 
 In accordance with intuition, if there is a shift in the political weighting function so that the government agency weights the profits of the import-competing sector more heavily for a given amount of lobbying effort....
+
+
+\begin{lemma}
+  Lobbying effort is weakly increasing in the uniform exogenous positive shifts of the political weighting function. \hyperlink{Pr_ga_indir}{Proof}
+  \label{res:ga_indir}
+\end{lemma}
+
+
+\begin{result}
+	The total probability that the antidumping duties will be renewed is increasing in $\ga$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \pi} \geq 0$). \hyperlink{Pr_ga_total}{Proof}
+	\label{res:ga_total}
+\end{result}
+
 
 %This translates in a straightforward way to an impact on the trade agreement tariff.
 
@@ -376,13 +389,31 @@ $	\frac{\partial R(\bta,\tad)}{\partial \tau^a} = \frac{\partial r}{\partial  e}
 
 
 \vskip.4in	  	
-\noindent \textbf{\hypertarget{Pr_eg}{Proof of Result~\ref{res:eg}}}: \\
-
+\noindent \textbf{\hypertarget{Pr_astar}{Proof of Result~\ref{res:leg_astar}}}: \\
+$	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^{*a}} + \frac{\partial r}{\partial \tau^{*a}}$. $\frac{\partial r}{\partial \tau^{*a}}$ is zero because Expression~\ref{eq:b_ex}, after simplification, is not a function of $\tau^{*a}$. $\frac{\partial e}{\partial \tau^{*a}}$ is also zero because Equation~\ref{eq:lobbyfoc} is not a function of $\tau^{*a}$. Thus the entire expression is zero. $\hfill\blacksquare$
 
 
 \vskip.4in	  	
-\noindent \textbf{\hypertarget{Pr_astar}{Proof of Result~\ref{res:leg_astar}}}: \\
-$	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^{*a}} + \frac{\partial r}{\partial \tau^{*a}}$. $\frac{\partial r}{\partial \tau^{*a}}$ is zero because Expression~\ref{eq:b_ex}, after simplification, is not a function of $\tau^{*a}$. $\frac{\partial e}{\partial \tau^{*a}}$ is also zero because Equation~\ref{eq:lobbyfoc} is not a function of $\tau^{*a}$. Thus the entire expression is zero. $\hfill\blacksquare$
+\noindent \textbf{\hypertarget{Pr_ga_dir}{Proof of Lemma~\ref{res:ga_dir}}}: \\
+The effect on the renewal probability is determined by the sign of the derivative of the right hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\ga(\cdot)$; to show that the renewal probability is increasing/non-decreasing(?) in $\ga(\cdot)$, I must demonstrate that this derivative is positive. 
+
+This leaves room for very broad kinds of shifts in $\ga(\cdot)$. 
+
+
+
+\vskip.4in
+\noindent \textbf{\hypertarget{Pr_ga_indir}{Proof of Lemma~\ref{res:ga_indir}}}:\\
+Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
+  \[
+		\frac{\partial e}{\partial \ga(\cdot)} = - \frac{\frac{\partial FOC_L}{\partial \ga(\cdot)}}{\frac{\partial FOC_L}{\partial e}} =
+		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \ga(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
+	\]
+
+
+\vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_ga_total}{Proof of Result~\ref{res:ga_total}}}: \\
+$\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \ga(\cdot)} + \frac{\partial r}{\partial \ga(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_indir}. $\frac{\partial r}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
+
 
 
 \vskip.4in
@@ -390,7 +421,7 @@ $	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial 
 
 The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to a positive shift in the $\pi(\cdot)$ function; to show that the renewal probability is increasing in such a positive shift, I must demonstrate that this derivative is negative. The derivative is 
 \begin{equation}
-  \frac{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)\left(\frac{\partial }{\partial \pi(\dot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + Z(\bta,\tad) \left(\frac{\partial }{\partial \pi(\dot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right)}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \frac{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)\left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + Z(\bta,\tad) \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right)}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
   \label{appex:pi}
 \end{equation}
 
@@ -408,7 +439,8 @@ $\hfill\blacksquare$
 \noindent \textbf{\hypertarget{Pr_pi_indir}{Proof of Lemma~\ref{res:pi_indir}}}:\\
 Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
   \[
-		\frac{\partial e}{\partial \tau^a} = - \frac{\frac{\partial FOC_L}{\partial \tau^a}}{\frac{\partial FOC_L}{\partial e}} = \frac{ \frac{\partial r}{\partial e} \frac{\partial \pi(\bta)}{\partial \tau^a} - \frac{\partial^2 r}{\partial e \partial \tau^a} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
+		\frac{\partial e}{\partial \pi(\cdot)} = - \frac{\frac{\partial FOC_L}{\partial \pi(\cdot)}}{\frac{\partial FOC_L}{\partial e}} =
+		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
 Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 r}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
 
@@ -423,7 +455,7 @@ where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. Th
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_pi_total}{Proof of Result~\ref{res:pi_total}}}: \\
-$	\frac{\partial R(\bta,\tad)}{\partial \tau^a} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tau^a} + \frac{\partial r}{\partial \tau^a}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:lobby}. $\frac{\partial r}{\partial \tau^a}$ is non-positive by Lemma~\ref{res:leg_a}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+$\frac{\partial R(\bta,\tad)}{\partial \pi(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \pi(\cdot)} + \frac{\partial r}{\partial \pi(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_indir}. $\frac{\partial r}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
 
 
 
