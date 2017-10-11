@@ -331,13 +331,13 @@ In accordance with intuition, if there is a shift in the political weighting fun
 
 
 \begin{lemma}
-  Lobbying effort is weakly increasing in the antidumping duties. \hyperlink{Pr_tad_indir}{Proof}
+  Lobbying effort is weakly decreasing in the antidumping duties. \hyperlink{Pr_tad_indir}{Proof}
   \label{res:tad_indir}
 \end{lemma}
 
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is increasing in level of the antidumping duties $\tad$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \pi} \geq 0$). \hyperlink{Pr_tad_total}{Proof}
+	The total probability that the antidumping duties will be renewed is decreasing in level of the antidumping duties $\tad$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial \tad} \leq 0$). \hyperlink{Pr_tad_total}{Proof}
 	\label{res:tad_total}
 \end{result}
 
@@ -395,7 +395,7 @@ We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tau^a} = -\frac{\parti
 	
 Then $\frac{\partial^2 r}{\partial e \partial \tau^a} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tau^a} \right) = 
 	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tau^a \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\bta,\tad)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tau^a} \leq 0$. Thus $\frac{\partial e}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. $\frac{\partial Z(\bta,\tad)}{\partial \tau^a} \geq 0$ as long as $\tau^a$ is weakly larger than the optimal unilateral tariff in the absence of lobbying, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tau^a} \leq 0$. Thus $\frac{\partial e}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
 
 
 \vskip.4in
@@ -511,13 +511,13 @@ We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tad} = -\frac{\partial
 	
 Then $\frac{\partial^2 r}{\partial e \partial \tad} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} \right) = 
 	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tad \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\bta,\tad)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tau^a} \leq 0$. Thus $\frac{\partial e}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. As long as $\tad$ is greater than the optimal unilateral tariff, $\frac{\partial Z(\bta,\tad)}{\partial \tad} \leq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tad} \geq 0$. Thus $\frac{\partial e}{\partial \tad} \leq 0$.  $\hfill\blacksquare$
 
 
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_tad_total}{Proof of Result~\ref{res:tad_total}}}: \\
-$\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \ga(\cdot)} + \frac{\partial r}{\partial \ga(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_indir}. $\frac{\partial r}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
+$\frac{\partial R(\bta,\tad)}{\partial \tad} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tad} + \frac{\partial r}{\partial \tad}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_indir}. $\frac{\partial r}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_dir}. Thus the entire expression is non-positive. $\hfill\blacksquare$
 
 
 
