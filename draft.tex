@@ -261,6 +261,31 @@ Because the duties are a unilateral policy that we presume here are permissable 
 
 
 \bigskip
+\subsection{Antidumping Duties}
+\label{sec:tad}
+
+
+\begin{lemma}
+  The direct effect of an increase in the antidumping duty on the probability the government renews the antidumping duties is negative. \hyperlink{Pr_tad_dir}{Proof}
+  \label{res:tad_dir}
+\end{lemma}
+
+
+\begin{lemma}
+  Lobbying effort is weakly decreasing in the antidumping duties. \hyperlink{Pr_tad_indir}{Proof}
+  \label{res:tad_indir}
+\end{lemma}
+
+
+\begin{result}
+	The total probability that the antidumping duties will be renewed is decreasing in level of the antidumping duties $\tad$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial \tad} \leq 0$). \hyperlink{Pr_tad_total}{Proof}
+	\label{res:tad_total}
+\end{result}
+
+
+
+
+\bigskip
 \subsection{Political Weighting Function}
 \label{sec:gamma}
 
@@ -318,28 +343,6 @@ In accordance with intuition, if there is a shift in the political weighting fun
 \end{result}
 
 
-
-
-\subsection{Antidumping Duties}
-\label{sec:tad}
-
-
-\begin{lemma}
-  The direct effect of an increase in the antidumping duty on the probability the government renews the antidumping duties is negative. \hyperlink{Pr_tad_dir}{Proof}
-  \label{res:tad_dir}
-\end{lemma}
-
-
-\begin{lemma}
-  Lobbying effort is weakly decreasing in the antidumping duties. \hyperlink{Pr_tad_indir}{Proof}
-  \label{res:tad_indir}
-\end{lemma}
-
-
-\begin{result}
-	The total probability that the antidumping duties will be renewed is decreasing in level of the antidumping duties $\tad$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial \tad} \leq 0$). \hyperlink{Pr_tad_total}{Proof}
-	\label{res:tad_total}
-\end{result}
 
 
 
@@ -416,6 +419,47 @@ $	\frac{\partial R(\bta,\tad)}{\partial \tau^{*a}} = \frac{\partial r}{\partial 
 
 
 \vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_tad_dir}{Proof of Lemma~\ref{res:tad_dir}}}: \\
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tad$; to show that the renewal probability is decreasing in $\tad$, I must demonstrate that this derivative is positive. Again labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tad$ is 
+
+\begin{equation}
+  \frac{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)\left(\frac{\partial \mathit{CS}_X(\tad)}{\partial \tad} + \frac{\partial \pi_X(\tad)}{\partial \tad} + \frac{\partial \mathit{TR}(\tad)}{\partial \tad}\right) + Z(\bta,\tad) \frac{\partial \pi_X(\tad)}{\partial \tad}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \label{appex:tad}
+\end{equation}
+
+\noindent $\left(\pi_X(\tau^a) - \pi_X(\tad)\right)$ is always negative. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tad)}{\partial \tad} + \frac{\partial \pi_X(\tad)}{\partial \tad} + \frac{\partial \mathit{TR}(\tad)}{\partial \tad}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter. Note it seems unreasonable for $\tad$ to be smaller than $\tau^O$ but this can be proved for the general case so we will not assume it.
+
+$Z(\bta,\tad)$ is also always positive on $[0,\tau^O]$ since $\tad > \tau^a$ and on this range $\tad$ is closer to the optimum. Profits are increasing in $\tad$, so the second summand is positive on $[0,\tau^O]$. With a positive denominator, we thus have that the entire express is positive on $[0,\tau^O]$.
+
+It is also positive for all tariffs larger than $\tau^O$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tad)}{\partial \tad} \left(\pi_X(\tau^a) - \pi_X(\tad)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^{ad}$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^{ad}$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^{ad}$ so that this term is always positive. Since the denominator is a squared term of a strictly negative quantity, the expression in Equation~\ref{appex:tad} is positive for all $\tau^{ad}$.  $\hfill\blacksquare$
+
+\vskip.4in
+\noindent \textbf{\hypertarget{Pr_tad_indir}{Proof of Lemma~\ref{res:tad_indir}}}:\\
+Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
+  \[
+		\frac{\partial e}{\partial \tad} = - \frac{\frac{\partial FOC_L}{\partial \tad}}{\frac{\partial FOC_L}{\partial e}} =
+		- \frac{ \frac{\partial r}{\partial e} \frac{\partial \pi(\tad)}{\partial \tad} + \frac{\partial^2 r}{\partial e \partial \tad} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
+	\]
+The denominator is again negative.
+
+Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial \pi(\tad)}{\partial \tad}$ is positive by construction so the first term is positive. 
+
+We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \tad} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \tad}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+	
+Then $\frac{\partial^2 r}{\partial e \partial \tad} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} \right) = 
+	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tad \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} $
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. As long as $\tad$ is greater than the optimal unilateral tariff, $\frac{\partial Z(\bta,\tad)}{\partial \tad} \leq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tad} \geq 0$. Thus $\frac{\partial e}{\partial \tad} \leq 0$.  $\hfill\blacksquare$
+
+
+
+\vskip.4in	  	
+\noindent \textbf{\hypertarget{Pr_tad_total}{Proof of Result~\ref{res:tad_total}}}: \\
+$\frac{\partial R(\bta,\tad)}{\partial \tad} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tad} + \frac{\partial r}{\partial \tad}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_indir}. $\frac{\partial r}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_dir}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+
+
+\vskip.4in	  	
+
+\newpage
 \noindent \textbf{\hypertarget{Pr_ga_dir}{Proof of Lemma~\ref{res:ga_dir}}}: \\
 The effect on the renewal probability is determined by the sign of the derivative of the right hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\ga(\cdot)$; to show that the renewal probability is increasing/non-decreasing(?) in $\ga(\cdot)$, I must demonstrate that this derivative is positive. 
 
@@ -431,6 +475,7 @@ Proof is via the Implicit Function Theorem using the lobby's first order conditi
 		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \ga(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
 
+The denominator is negative as show in the Proof of Lemma~\ref{res:lobby}. The first term in the numerator is zero since the profit function does not vary in $\ga(\cdot,\cdot)$.
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_ga_total}{Proof of Result~\ref{res:ga_total}}}: \\
@@ -480,44 +525,6 @@ where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. Th
 $\frac{\partial R(\bta,\tad)}{\partial \pi(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \pi(\cdot)} + \frac{\partial r}{\partial \pi(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_indir}. $\frac{\partial r}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
 
 
-
-\vskip.4in	  	
-\noindent \textbf{\hypertarget{Pr_tad_dir}{Proof of Lemma~\ref{res:tad_dir}}}: \\
-The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tad$; to show that the renewal probability is decreasing in $\tad$, I must demonstrate that this derivative is positive. Again labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tad$ is 
-
-\begin{equation}
-  \frac{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)\left(\frac{\partial \mathit{CS}_X(\tad)}{\partial \tad} + \frac{\partial \pi_X(\tad)}{\partial \tad} + \frac{\partial \mathit{TR}(\tad)}{\partial \tad}\right) + Z(\bta,\tad) \frac{\partial \pi_X(\tad)}{\partial \tad}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
-  \label{appex:tad}
-\end{equation}
-
-\noindent $\left(\pi_X(\tau^a) - \pi_X(\tad)\right)$ is always negative. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tad)}{\partial \tad} + \frac{\partial \pi_X(\tad)}{\partial \tad} + \frac{\partial \mathit{TR}(\tad)}{\partial \tad}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter. Note it seems unreasonable for $\tad$ to be smaller than $\tau^O$ but this can be proved for the general case so we will not assume it.
-
-$Z(\bta,\tad)$ is also always positive on $[0,\tau^O]$ since $\tad > \tau^a$ and on this range $\tad$ is closer to the optimum. Profits are increasing in $\tad$, so the second summand is positive on $[0,\tau^O]$. With a positive denominator, we thus have that the entire express is positive on $[0,\tau^O]$.
-
-It is also positive for all tariffs larger than $\tau^O$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tad)}{\partial \tad} \left(\pi_X(\tau^a) - \pi_X(\tad)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^{ad}$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^{ad}$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^{ad}$ so that this term is always positive. Since the denominator is a squared term of a strictly negative quantity, the expression in Equation~\ref{appex:tad} is positive for all $\tau^{ad}$.  $\hfill\blacksquare$
-
-\vskip.4in
-\noindent \textbf{\hypertarget{Pr_tad_indir}{Proof of Lemma~\ref{res:tad_indir}}}:\\
-Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
-  \[
-		\frac{\partial e}{\partial \tad} = - \frac{\frac{\partial FOC_L}{\partial \tad}}{\frac{\partial FOC_L}{\partial e}} =
-		- \frac{ \frac{\partial r}{\partial e} \frac{\partial \pi(\tad)}{\partial \tad} + \frac{\partial^2 r}{\partial e \partial \tad} \left[ \pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
-	\]
-The denominator is again negative.
-
-Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial \pi(\tad)}{\partial \tad}$ is positive by construction so the first term is positive. 
-
-We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \tad} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \tad}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
-	
-Then $\frac{\partial^2 r}{\partial e \partial \tad} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} \right) = 
-	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tad \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. As long as $\tad$ is greater than the optimal unilateral tariff, $\frac{\partial Z(\bta,\tad)}{\partial \tad} \leq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tad} \geq 0$. Thus $\frac{\partial e}{\partial \tad} \leq 0$.  $\hfill\blacksquare$
-
-
-
-\vskip.4in	  	
-\noindent \textbf{\hypertarget{Pr_tad_total}{Proof of Result~\ref{res:tad_total}}}: \\
-$\frac{\partial R(\bta,\tad)}{\partial \tad} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tad} + \frac{\partial r}{\partial \tad}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_indir}. $\frac{\partial r}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_dir}. Thus the entire expression is non-positive. $\hfill\blacksquare$
 
 
 
