@@ -573,15 +573,15 @@ $\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)} = \frac{\partial r}{\partial 
 \noindent \textbf{\hypertarget{Pr_pi_dir}{Proof of Lemma~\ref{res:pi_dir}}}:
 
 The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to a positive shift in the $\pi(\cdot)$ function; to show that the renewal probability is increasing in such a positive shift, I must demonstrate that the following derivative is negative: 
-\begin{equation}
+\[
   \frac{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)\left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + Z(\bta,\tad) \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right)}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
-  \label{appex:pi}
-\end{equation}
+\]  
 
 This can be simplied to
-\[
+\begin{equation}
   \frac{\left(\mathit{CS}_X(\tad) + \mathit{TR}(\tad)  -\mathit{CS}_X(\tau^a) - \mathit{TR}(\tau^a) \right)\left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) }{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
-\]
+\label{appex:pi}
+\end{equation}
 
 %\noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. 
 
@@ -600,12 +600,11 @@ Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing i
 
 Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive by assumption so the first term is positive. 
 
-We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \tau^a}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
 Then $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} = - \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} \right) = 
 	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \pi(\cdot) \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. $-\frac{\partial Z(\bta,\tad)}{\partial \pi(
-cdot)} = - \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) \leq 0$ by assumption, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \leq 0$. Thus the sign of $\frac{\partial e}{\partial \pi(\cdot)}$ is ambiguous.  $\hfill\blacksquare$
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. $-\frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} = - \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) \leq 0$ by assumption, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \leq 0$. Thus the sign of $\frac{\partial e}{\partial \pi(\cdot)}$ is ambiguous.  $\hfill\blacksquare$
 
 
 \vskip.4in	  	
