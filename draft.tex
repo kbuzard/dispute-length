@@ -454,15 +454,13 @@ Rearranging, we have $r(e_b,\bta,\tad) = $
   \label{eq:b_ex}
 \end{multline}
 
-The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the renewal probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the numerator of that expression $Z(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
+The effect on the renewal probability is determined by the sign of the derivative of the left hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\tau^a$; to show that the renewal probability is decreasing in $\tau^a$, I must demonstrate that this derivative is positive. Labeling the left hand side of the inequality in Expression~\ref{eq:b_ex} $Z(\bta,\tad)$ and the numerator of that expression $ZN(\bta,\tad)$, the derivative of this quantity with respect to $\tau^{a}$ is 
 \begin{equation}
-  \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - Z(\bta,\tad) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \frac{\left(\pi_X(\tad) - \pi_X(\tau^a)\right)\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right) - ZN(\bta,\tad) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a}}{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
   \label{appex:a}
 \end{equation}
 
 \noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. Because the optimal unilateral tariff for large welfare-maximizing governments is positive (call it $\tau^O$), $\left(\frac{\partial \mathit{CS}_X(\tau^{a})}{\partial \tau^{a}} + \frac{\partial \pi_X(\tau^a)}{\partial \tau^{a}} + \frac{\partial \mathit{TR}(\tau^{a})}{\partial \tau^{a}}\right)$ is increasing up to $\tau^O$ and decreasing above it. Thus the first summand is increasing up until $\tau^O$ and decreasing thereafter.
-
-Because total social welfare is maximized at $\tau^a = \tau^{*a} = 0$, $Z(\bta,\tad)$ is always negative, whereas profits are increasing in $\tau^a$, so the second summand is positive everywhere (inclusive of the leading negative sign). With a positive denominator, we thus have that the derivative is positive on $[0,\tau^O]$.
 
 It is also positive over the remaining $(\tau^O,\tad)$. To see this, add $\left(\tilde{\Gamma} - 1 \right) \frac{\partial \pi_X(\tau^a)}{\partial \tau^a} \left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ to the first summand and subtract it from the second. For any particular value of $\tilde{\tau}^a$, one can choose the $\tilde{\Gamma}$ weight that would make $\tilde{\tau}^a$ the preferred unilateral tariff; this makes the derivative in the first summand zero. Having subtracted the same quantity from the second summand modifies the welfare difference in the second summand to be maximized at $\tilde{\tau}^a$ so that this term is always positive (inclusive of the leading negative sign).
 
