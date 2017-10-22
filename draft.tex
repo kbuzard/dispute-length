@@ -393,7 +393,7 @@ In accordance with intuition, if there is a shift in the political weighting fun
 
 
 \begin{lemma}
-  The direct effect of an increase in the import competing sector's profitability on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_pi_dir}{Proof}
+  The direct effect of a change in the import competing sector's profitability on the probability the government renews the antidumping duty has the same sign as the change in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_dir}{Proof}
   \label{res:pi_dir}
 \end{lemma}
 
@@ -574,14 +574,17 @@ The effect on the renewal probability is determined by the sign of the derivativ
 
 This can be simplied to
 \begin{equation}
-  \frac{\left(\mathit{CS}_X(\tad) + \mathit{TR}(\tad)  -\mathit{CS}_X(\tau^a) - \mathit{TR}(\tau^a) \right)\left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) }{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
+  \frac{\left[\mathit{CS}_X(\tad) + \mathit{TR}(\tad)  -\mathit{CS}_X(\tau^a) - \mathit{TR}(\tau^a) \right]\left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) }{\left(\pi_X(\tau^a) - \pi_X(\tad)\right)^2}.
 \label{appex:pi}
 \end{equation}
 
-%\noindent $\left(\pi_X(\tad) - \pi_X(\tau^a)\right)$ is always positive. 
+Assume the tariff that maximizes the term in square brackets is small enough so that this term is negative. This should hold almost everywhere, as the tariff that maximizes that term is zero in most cases, and certainly smaller than $\tau^O$. Since the denominator is a squared term of a strictly positive quantity, the sign of the derivative is determined by the sign of $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$.
 
-%Since the denominator is a squared term of a strictly positive quantity, %the expression in Equation~\ref{appex:a} is positive for all $\tau^{a}$.
-$\hfill\blacksquare$
+When $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right] \geq 0$ the derivative is weakly negative and $\frac{\partial r}{\partial \pi(\cdot)}$ is weakly positive.
+
+When $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right] \leq 0$ the derivative is weakly positive and $\frac{\partial r}{\partial \pi(\cdot)}$ is weakly negative.
+
+Thus the derivative of the renewal probability has the same sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$, which indicates how the gap between profits under antidumping duties and profits under the trade agreement tariff changes when the profit function changes. $\hfill\blacksquare$
 
 
 \vskip.2in
