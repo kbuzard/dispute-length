@@ -569,7 +569,17 @@ Proof is via the Implicit Function Theorem using the lobby's first order conditi
 		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \ga(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
 
-The denominator is negative as show in the Proof of Lemma~\ref{res:lobby}. The first term in the numerator is zero since the profit function does not vary in $\ga(\cdot,\cdot)$.
+The denominator is negative as show in the Proof of Lemma~\ref{res:lobby}. The first term in the numerator is zero since the profit function does not vary in $\ga(\cdot,\cdot)$. Combining this with the leading negative sign and the fact that $\left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive, the sign of $\frac{\partial e}{\partial \ga(\cdot)}$ is determined by the sign of $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)}$.
+
+We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \ga(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \ga(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+	
+Then $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} = - \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \ga(\cdot)} \right) = 
+	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \ga(\cdot) \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} \frac{\partial f_\ga}{\partial e} $
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$.
+
+The proof of Lemma~\ref{res:pi_dir} shows that $\frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$ has the opposite sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$. When $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is weakly positive (negative), $\frac{\partial f_\ga}{\partial e} \geq 0$ implies that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \geq 0 \ \left(\leq 0\right)$. Thus $\frac{\partial e}{\partial \pi(\cdot)}$ has the same sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$.  $\hfill\blacksquare$
+
+
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_ga_total}{Proof of Result~\ref{res:ga_total}}}: \\
