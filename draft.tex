@@ -399,13 +399,26 @@ In accordance with intuition, if there is a shift in the political weighting fun
 
 
 \begin{lemma}
-  Lobbying effort is weakly increasing in the import competing sector's profitability. \hyperlink{Pr_pi_indir}{Proof}
+  The effect of a change in the import competing sector's profitability on lobbying effort has the same sign as the change in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_indir}{Proof}
   \label{res:pi_indir}
 \end{lemma}
 
+Notes:
+\begin{itemize}
+	\item For $\frac{\partial R}{\partial \pi} \geq 0$, need the return from lobbying to increase with increase in $\pi$ AND
+	\item government marginal benefit from protection to increase with $\pi$
+\end{itemize}
+
+\vskip.2in
+\begin{itemize}
+	\item Profit function convex $\Rightarrow$ also quasiconvex
+	\item But hit it with the right increasing monotone transformation and $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ can go either way
+	\item This is about how the differences change (CARDINAL)
+\end{itemize}
+
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is increasing in $\pi$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \pi} \geq 0$). \hyperlink{Pr_pi_total}{Proof}
+	The total probability that the antidumping duties will be renewed increases (decreases) when there is an increase (decrease) in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_total}{Proof}
 	\label{res:pi_total}
 \end{result}
 
@@ -589,25 +602,25 @@ Thus the derivative of the renewal probability has the same sign as $\frac{\part
 
 \vskip.2in
 \noindent \textbf{\hypertarget{Pr_pi_indir}{Proof of Lemma~\ref{res:pi_indir}}}:\\
-Proof is via the Implicit Function Theorem using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
+Proof is via the Implicit Function Theorem for Banach spaces using the lobby's first order condition, Equation~\ref{eq:lobbyfoc}, referred to here as $FOC_L$.
   \[
 		\frac{\partial e}{\partial \pi(\cdot)} = - \frac{\frac{\partial FOC_L}{\partial \pi(\cdot)}}{\frac{\partial FOC_L}{\partial e}} =
 		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
-Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 r}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
+Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 r}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative. Combining this with the leading negative sign, the sign of $\frac{\partial e}{\partial \pi(\cdot)}$ is determined by the sign of the numerator.
 
-Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive by assumption so the first term is positive. 
+$\frac{\partial r}{\partial e}$ is positive by Lemma~\ref{res:bincC} and $\left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive as argued above.
 
-We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+$\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ may be either positive or negative, and its sign impacts $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)}$. To see how, we can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
 Then $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} = - \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \pi(\cdot)} \right) = 
 	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \pi(\cdot) \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. Refer to result in proof of Lemma~\ref{res:pi_dir}; then $\frac{\partial f_\ga}{\partial e} \geq 0$ implies that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \ldots$. Thus the sign of $\frac{\partial e}{\partial \pi(\cdot)}$ is ambiguous.  $\hfill\blacksquare$
+where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. The proof of Lemma~\ref{res:pi_dir} shows that $\frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$ has the opposite sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$. When $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is weakly positive (negative), $\frac{\partial f_\ga}{\partial e} \geq 0$ implies that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \geq 0 \ \left(\leq 0\right)$. Thus $\frac{\partial e}{\partial \pi(\cdot)}$ has the same sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$.  $\hfill\blacksquare$
 
 
-\vskip.4in	  	
+\vskip.3in	  	
 \noindent \textbf{\hypertarget{Pr_pi_total}{Proof of Result~\ref{res:pi_total}}}: \\
-$\frac{\partial R(\bta,\tad)}{\partial \pi(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \pi(\cdot)} + \frac{\partial r}{\partial \pi(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_indir}. $\frac{\partial r}{\partial \pi(\cdot)}$ is non-negative by Lemma~\ref{res:pi_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
+$\frac{\partial R(\bta,\tad)}{\partial \pi(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \pi(\cdot)} + \frac{\partial r}{\partial \pi(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial r}{\partial \pi(\cdot)}$ and $\frac{\partial e}{\partial \pi(\cdot)}$ are both non-negative (non-positive) when $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is non-negative (non-positive) by Lemmas~\ref{res:pi_dir} and \ref{res:pi_indir}. Thus the sign of the entire expression is the same as the sign of $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$.$\hfill\blacksquare$
 
 
 
