@@ -85,6 +85,8 @@ bookmarksopen=true]{hyperref}
 \bigskip
 \section{Introduction}
 
+
+\newpage
 \begin{enumerate}
 	\item How long do deviations from trade agreement tariffs last? 
   \item What are the determinants of renewals?
@@ -336,24 +338,28 @@ Because the duties are a unilateral policy that we presume here are permissable 
 \subsection{Antidumping Duties}
 \label{sec:tad}
 
+The level at which the antidumpting duties are set is likely to be related to some of the variables under consideration here, as the duties are determined five (or more) years earlier through a process similar to the renewal process. Endogenizing the level of the antidumping duties, as well as the fact of their application in the first place, is planned as an important extension.
+
+Even in the case where we take the antidumping duties as exogenous, the prediction is not clear cut. The direct effect is negative, as the government becomes less willing to protect the industries as the higher duties increasingly harm social welfare.
 
 \begin{lemma}
   The direct effect of an increase in the antidumping duty on the probability the government renews the antidumping duties is negative. \hyperlink{Pr_tad_dir}{Proof}
   \label{res:tad_dir}
 \end{lemma}
 
+However, the indirect effect of raising antidumping duties is ambiguous. Higher duties mean the return to a positive renewal decision is larger and thus the lobby has a larger incentive to exert effort; at the same time, the marginal impact of lobbying on the renewal probability falls as the antidumping duties increase and this blunts lobbying incentives. We can't say whether lobbying expenditure will rise or fall without knowing the magnitude of these two effects.
 
 \begin{lemma}
   Higher antidumping duties may lead to either an increase or decrease in lobbying effort. \hyperlink{Pr_tad_indir}{Proof}
   \label{res:tad_indir}
 \end{lemma}
 
+Because the direct effect of increasing antidumping duties to reduce the renewal probability, the only way the total effect of increasing antidumping duties leads to a larger probability of renewal is if the lobbying response is positive and large in magnitude.
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is most likely to decrease in level of the antidumping duties but it can increase in the antidumping duties if the indirect effect is positive and large enough to outweigh the direct effect. \hyperlink{Pr_tad_total}{Proof}
+	The total probability that the antidumping duties will be renewed is most likely to decrease in the level of the antidumping duties but it can increase in the antidumping duties if the indirect effect is positive and large enough to outweigh the direct effect. \hyperlink{Pr_tad_total}{Proof}
 	\label{res:tad_total}
 \end{result}
-
 
 
 
@@ -361,21 +367,23 @@ Because the duties are a unilateral policy that we presume here are permissable 
 \subsection{Political Weighting Function}
 \label{sec:gamma}
 
-We next examine the weight the median decision-maker places on the profits of the import-competing sector. The value of the political weight $\ga(e,\ta)$ is endogenous to many of the decisions underpinning the equilibrium, but here we examine the effect of an exogenous shift in the weighting function itself, $\ga(\cdot,\ta)$. We start again with the direct effect:
+We next examine the weight the median decision-maker places on the profits of the import-competing sector. The value of the political weight $\ga(e,\ta)$ is endogenous to many of the decisions underpinning the equilibrium, but here we examine the effect of an exogenous shift in the weighting function itself, $\ga(\cdot,\ta)$. The type of shift we analyze is one in which the value of $\ga(\cdot,\ta)$ weakly increases for every value of $e$.
+
+The direct effect is positive. This is quite intuitive: when the government places a higher weight on the industry's profits for a given lobbying effort, it is more likely to renew the antidumping duties because the industry's profits are now more important relative to social welfare.
 
 \begin{lemma}
-  The direct effect of exogenous positive shifts in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_ga_dir}{Proof}
+  The direct effect of an exogenous positive shift in the political weighting function $\ga(\cdot,\ta)$ on the probability the government renews the antidumping duty is positive. \hyperlink{Pr_ga_dir}{Proof}
 	  \label{res:ga_dir}
 \end{lemma}
 
-In accordance with intuition, if there is a shift in the political weighting function so that the government agency weights the profits of the import-competing sector more heavily for a given amount of lobbying effort....
-
+Perhaps not surprisingly, the lobby's incentives move in the opposite direction. A shift in $\ga(\cdot,\ta)$ does not directly change the lobby's payoff. But it makes its marginal unit of effort more productive, so the lobby optimally reduces effort (i.e. the marginal cost of a unit of effort stays the same, so the lobby reduces effort when the increase in $\ga(\cdot,\ta)$ improves the marginal benefit).
 
 \begin{lemma}
   Lobbying effort is weakly decreasing in exogenous positive shifts of the political weighting function. \hyperlink{Pr_ga_indir}{Proof}
   \label{res:ga_indir}
 \end{lemma}
 
+The total effect of the positive shift in $\ga(\cdot,\ta)$ depends on which of the direct or indirect effects is larger.
 
 \begin{result}
 	The total probability that the antidumping duties will be renewed is increasing in $\ga(\cdot)$ if the direct effect dominates and is decreasing in $\ga(\cdot)$ if the indirected effect dominates. \hyperlink{Pr_ga_total}{Proof}
@@ -396,41 +404,30 @@ In accordance with intuition, if there is a shift in the political weighting fun
 \subsection{Profitability of Import Competing Sector}
 \label{sec:pi}
 
+Finally we turn to questions of the lobbying sector's profitability. Profitability can shift in many ways, and they can affect incentives in many ways. In terms of the impact on both the government and lobby's decisions around renewal of temporary trade barriers, it turns out that changes in the gap between the profits under the antidumping duties and under the trade agreement tariff are a sufficient statistic. So we examine any change to profitability that affects this gap in a clear way.
+
+If profitability changes in such a way that the lobbying sector will now be even more profitable under the antidumping duties compared to the trade agreement tariff, the government becomes more likely to renew the antidumping duties. This shift improves the evaluation of the antidumping duties both in terms of the social welfare calculation and in terms of the lobby's benefit, but the lobby's benefit is weighted more heavily so the balance is tipped in favor of renewal.
 
 \begin{lemma}
   The direct effect of a change in the import competing sector's profitability on the probability the government renews the antidumping duty has the same sign as the change in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_dir}{Proof}
   \label{res:pi_dir}
 \end{lemma}
 
+From the lobby's perspective, an increase in the profit gap increases its incentives to exert lobbying effort; at the same time, because the government's renewal probability hinges on how much it over-weights profits, it becomes more worthwhile to exert lobbying effort to influence the government's decision-making weight directly.
 
 \begin{lemma}
   The effect of a change in the import competing sector's profitability on lobbying effort has the same sign as the change in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_indir}{Proof}
   \label{res:pi_indir}
 \end{lemma}
 
-Notes:
-\begin{itemize}
-	\item For $\frac{\partial R}{\partial \pi} \geq 0$, need the return from lobbying to increase with increase in $\pi$ AND
-	\item government marginal benefit from protection to increase with $\pi$
-\end{itemize}
-
-\vskip.2in
-\begin{itemize}
-	\item Profit function convex $\Rightarrow$ also quasiconvex
-	\item But hit it with the right increasing monotone transformation and $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ can go either way
-	\item This is about how the differences change (CARDINAL)
-\end{itemize}
-
+The direct and indirect effect combine so that the change in total probability depends only on the change in the profit gap under the antidumping duties and the trade agreement tariff.
 
 \begin{result}
 	The total probability that the antidumping duties will be renewed increases (decreases) when there is an increase (decrease) in the gap between profits under antidumping duties and profits under the trade agreement tariff. \hyperlink{Pr_pi_total}{Proof}
 	\label{res:pi_total}
 \end{result}
 
-
-
-
-
+The bottom line: in order for the total probability of renewal to go up, it must be that the shift in profitability leads to an increase in the government's marginal benefit from protection as well as the returns from lobbying. To think about changes to profitability, we can imagine transformations of the (convex) profit function. Different increasing transformations could leave the profit function more or less convex than the original. Both the government and the lobby care about $\pi_X(\tad) - \pi_X(\tau^a)$---that is, cardinal information is important. So we must pay attention to how this difference changes when the profit function changes in order to make predictions about the impact on the renewal of antidumping duties.
 
 
 \section{Conclusion}
