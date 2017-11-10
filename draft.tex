@@ -316,7 +316,7 @@ Result~\ref{res:bcomB} combines the direct and indirect effects to get the total
 	\label{res:bcomB}
 \end{result}
 
-\noindent When $\tau^a$ is higher, the government agency becomes less likely to renew the antidumping duties, for three reasons. First, the government prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying, reducing $R(\bta,\tad)$ indirectly (Lemma~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the government's preferred tariff further (Lemma~\ref{res:bincC}).
+\noindent When $\tau^a$ is higher, the government agency becomes less likely to renew the antidumping duties, for three reasons. First, the government prefers a higher domestic tariff (Lemma~\ref{res:leg_a}); second, the higher tariff discourages lobbying (Lemma~\ref{res:lobby}); and finally, the lower lobbying effort directly reduces the government's preferred tariff further (Lemma~\ref{res:bincC}).
 
 
 \bigskip
@@ -344,13 +344,13 @@ Because the duties are a unilateral policy that we presume here are permissable 
 
 
 \begin{lemma}
-  Lobbying effort is weakly decreasing in the antidumping duties. \hyperlink{Pr_tad_indir}{Proof}
+  Higher antidumping duties may lead to either an increase or decrease in lobbying effort. \hyperlink{Pr_tad_indir}{Proof}
   \label{res:tad_indir}
 \end{lemma}
 
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is decreasing in level of the antidumping duties $\tad$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial \tad} \leq 0$). \hyperlink{Pr_tad_total}{Proof}
+	The total probability that the antidumping duties will be renewed is most likely to decrease in level of the antidumping duties but it can increase in the antidumping duties if the indirect effect is positive and large enough to outweigh the direct effect. \hyperlink{Pr_tad_total}{Proof}
 	\label{res:tad_total}
 \end{result}
 
@@ -372,13 +372,13 @@ In accordance with intuition, if there is a shift in the political weighting fun
 
 
 \begin{lemma}
-  Lobbying effort is weakly increasing in the uniform exogenous positive shifts of the political weighting function. \hyperlink{Pr_ga_indir}{Proof}
+  Lobbying effort is weakly decreasing in exogenous positive shifts of the political weighting function. \hyperlink{Pr_ga_indir}{Proof}
   \label{res:ga_indir}
 \end{lemma}
 
 
 \begin{result}
-	The total probability that the antidumping duties will be renewed is increasing in $\ga$. (i.e. $\frac{\partial R(\bta,\tad)}{\partial  \ga(\cdot)} \geq 0$). \hyperlink{Pr_ga_total}{Proof}
+	The total probability that the antidumping duties will be renewed is increasing in $\ga(\cdot)$ if the direct effect dominates and is decreasing in $\ga(\cdot)$ if the indirected effect dominates. \hyperlink{Pr_ga_total}{Proof}
 	\label{res:ga_total}
 \end{result}
 
@@ -580,7 +580,7 @@ From the proof of Lemma~\ref{res:ga_dir}, we have $\frac{\partial r(e,\bta,\tad)
 	
 Then $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} = - \frac{\partial}{\partial e} \left( f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)} \right) = 
 	   - f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial \ga(\cdot) \partial e} - \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)} \frac{\partial f_\ta}{\partial e} = - f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial \ga(\cdot) \partial e} $
-where the above equality holds because the pdf of $\ta$ does not depend on $e$. When $\ga(\cdot)$ shifts up, $\frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)}$ becomes less negative, so $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \leq 0$.
+where the above equality holds because the pdf of $\ta$ does not depend on $e$. When $\ga(\cdot)$ shifts up, $\frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)}$ becomes less negative, so $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \leq 0$. Thus $\frac{\partial e}{\partial \ga(\cdot)} \leq 0$.
 
 $\hfill\blacksquare$
 
@@ -588,7 +588,7 @@ $\hfill\blacksquare$
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_ga_total}{Proof of Result~\ref{res:ga_total}}}: \\
-$\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \ga(\cdot)} + \frac{\partial r}{\partial \ga(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_indir}. $\frac{\partial r}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_dir}. Thus the entire expression is non-negative. $\hfill\blacksquare$
+$\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \ga(\cdot)} + \frac{\partial r}{\partial \ga(\cdot)}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \ga(\cdot)}$ is non-negative by Lemma~\ref{res:ga_indir}. $\frac{\partial r}{\partial \ga(\cdot)}$ is non-positive by Lemma~\ref{res:ga_dir}. Thus the sign of $\frac{\partial R(\bta,\tad)}{\partial \ga(\cdot)}$ can be positive, zero or negative. $\hfill\blacksquare$
 
 
 
