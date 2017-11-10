@@ -493,12 +493,12 @@ Proof is via the Implicit Function Theorem using the lobby's first order conditi
 	\]
 Beginning with the denominator: $\tad > \tau^a$ and $\pi(\cdot)$ is increasing in $\tau$ so the expression is brackets is positive. $\frac{\partial^2 r}{\partial e^2}$ is negative by Result~\ref{res:bincC}, so the denominator is negative.
 
-Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac{\partial \pi(\tau^a)}{\partial \tau^a}$ is positive by construction so the first term is positive. 
+Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive by Lemma~\ref{res:bincC} below and $\frac{\partial \pi(\tau^a)}{\partial \tau^a}$ is positive by construction so the first term is positive. 
 
 We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tau^a} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tau^a} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \tau^a} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \tau^a}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
 Then $\frac{\partial^2 r}{\partial e \partial \tau^a} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tau^a} \right) = 
-	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tau^a \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} $
+	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial e \partial \tau^a } - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tau^a} \frac{\partial f_\ga}{\partial e} $
 where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. The proof of Lemma~\ref{res:leg_a} shows that $\frac{\partial Z(\bta,\tad)}{\partial \tau^a} \geq 0$, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tau^a} \leq 0$. Thus $\frac{\partial e}{\partial \tau^a} \leq 0$.  $\hfill\blacksquare$
 
 
@@ -506,7 +506,7 @@ where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. Th
 \noindent \textbf{\hypertarget{Pr_bincC}{Proof of Lemma~\ref{res:bincC}}}:\\
 \noindent The left side of the inequality in Expression~\ref{eq:b_ex}, $Z(\bta,\tad)$, does not depend on $e$. Thus we have $r(e,\bta,\tad) = \Pr [Z < \ga(e,\ve) ] = 1 - F_{\ga}(\ga=Z)$ where $F_{\ga}(\ga=Z) = F_{\ta}(\ta=h^{-1}(\ga,e))$ by the Change of Variables Theorem and Assumption~\ref{as:ga_ta} with $\ga = h(e,\ta)$ giving the change of variable.
 
-Then $\frac{\partial r}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 r}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial r}{\partial e} \leq 0$ and $\frac{\partial^2 r}{\partial e^2} \leq 0$. $\hfill\blacksquare$
+Then $\frac{\partial r}{\partial e} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial e} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial e}$ and $\frac{\partial^2 r}{\partial e^2} = -f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2}$. Because $\ga = h(e,\ta)$ is increasing and concave in $e \ \forall \ta$ by Assumption~\ref{as:ga_c}, its inverse is decreasing and convex $\left(\frac{\partial h^{-1}(\ga,e)}{\partial e}\leq 0; \ \frac{\partial^2 h^{-1}(\ga,e)}{\partial e^2} \geq 0 \right)$ The pdf of $\ta$ is non-negative, so $\frac{\partial r}{\partial e} \geq 0$ and $\frac{\partial^2 r}{\partial e^2} \leq 0$. $\hfill\blacksquare$
 
 
 \vskip.4in	  	
@@ -548,21 +548,21 @@ Turning to the numerator: $\frac{\partial r}{\partial e}$ is positive and $\frac
 We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial  \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \tad} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \tad}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
 Then $\frac{\partial^2 r}{\partial e \partial \tad} = 	- \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \tad} \right) = 
-	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \tad \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} $
+	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial e \partial \tad } - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \tad} \frac{\partial f_\ga}{\partial e} $
 where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$. $\frac{\partial Z(\bta,\tad)}{\partial \tad} \geq 0$ by the proof of Lemma~\ref{res:tad_dir}, so $\frac{\partial f_\ga}{\partial e} \geq 0$ ensures that $\frac{\partial^2 r}{\partial e \partial \tad} \leq 0$. Thus the sign of $\frac{\partial e}{\partial \tad}$ is ambiguous.  $\hfill\blacksquare$
 
 
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_tad_total}{Proof of Result~\ref{res:tad_total}}}: \\
-$\frac{\partial R(\bta,\tad)}{\partial \tad} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tad} + \frac{\partial r}{\partial \tad}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial e}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_indir}. $\frac{\partial r}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_dir}. Thus the entire expression is non-positive. $\hfill\blacksquare$
+$\frac{\partial R(\bta,\tad)}{\partial \tad} = \frac{\partial r}{\partial  e}\frac{\partial e}{\partial \tad} + \frac{\partial r}{\partial \tad}$. $\frac{\partial r}{\partial  e}$ is non-negative by Lemma~\ref{res:bincC}. $\frac{\partial r}{\partial \tad}$ is non-positive by Lemma~\ref{res:tad_dir}. $\frac{\partial e}{\partial \tad}$ is ambiguous by Lemma~\ref{res:tad_indir}. Thus the sign of $\frac{\partial R(\bta,\tad)}{\partial \tad}$ may be either positive, zero or negative. $\hfill\blacksquare$
 
 
 \vskip.4in	  	
 \noindent \textbf{\hypertarget{Pr_ga_dir}{Proof of Lemma~\ref{res:ga_dir}}}: \\
-The effect on the renewal probability is determined by the sign of the derivative of the right hand side of the inequality in Expression~\ref{eq:b_ex} with respect to $\ga(\cdot)$; to show that the renewal probability is increasing/non-decreasing(?) in $\ga(\cdot)$, I must demonstrate that this derivative is positive. 
+\noindent The left side of the inequality in Expression~\ref{eq:b_ex}, $Z(\bta,\tad)$, does not depend on $e$. Thus we have $r(e,\bta,\tad) = \Pr [Z < \ga(e,\ve) ] = 1 - F_{\ga}(\ga=Z)$ where $F_{\ga}(\ga=Z) = F_{\ta}(\ta=h^{-1}(\ga,e))$ by the Change of Variables Theorem and Assumption~\ref{as:ga_ta} with $\ga = h(e,\ta)$ giving the change of variable.
 
-This leaves room for very broad kinds of shifts in $\ga(\cdot)$. 
+Then $\frac{\partial r}{\partial \ga(\cdot)} = -\frac{\partial F_{\ta}(\ta=h^{-1}(\ga,e))}{\partial \ta}\frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)} = -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)}$. Because $\ga = h(e,\ta)$ is increasing in both $e$ and $\ta$ by Assumption~\ref{as:ga_c}, $h^{-1}(\ga,e)$ decreases when $\ga(\cdot)$ increases for all $(e,\ta)$ pairs. The pdf of $\ta$ is non-negative, so $\frac{\partial r}{\partial \ga(\cdot)} \geq 0$. $\hfill\blacksquare$
 
 
 
@@ -574,15 +574,15 @@ Proof is via the Implicit Function Theorem for Banach spaces using the lobby's f
 		- \frac{ \frac{\partial r}{\partial e} \left(\frac{\partial }{\partial \ga(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]\right) + \frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \left[\pi(\tad) - \pi(\tau^a) \right]}{\frac{\partial^2 r}{\partial e^2} \left[ \pi(\tad) - \pi(\tau^a) \right]}
 	\]
 
-The denominator is negative as show in the Proof of Lemma~\ref{res:lobby}. The first term in the numerator is zero since the profit function does not vary in $\ga(\cdot,\cdot)$. Combining this with the leading negative sign and the fact that $\left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive, the sign of $\frac{\partial e}{\partial \ga(\cdot)}$ is determined by the sign of $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)}$.
+The denominator is negative as show in the Proof of Lemma~\ref{res:lobby}. The first term in the numerator is zero since the profit function does not vary in $\ga(\cdot,\cdot)$. Combining this with the leading negative sign and the fact that $\left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is positive, the sign of $\frac{\partial e}{\partial \ga(\cdot)}$ is determined by the sign of $\frac{\partial^2 r}{\partial \ga(\cdot) \partial e}$.
 
-We can rewrite $\frac{\partial r(e,\bta,\tad)}{\partial \ga(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial \ga(\cdot)} = -\frac{\partial F_\ga (Z(\bta,\tad))}{\partial Z(\bta,\tad)} \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} = - f_\ga \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
+From the proof of Lemma~\ref{res:ga_dir}, we have $\frac{\partial r(e,\bta,\tad)}{\partial \ga(\cdot)} =  -f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)}$, where $F_\ga (Z(\bta,\tad))$ is the CDF of $\ga$ and $f_\ga (Z(\bta,\tad))$ is the pdf of $\ga$ and $Z(\bta,\tad)$ again represents the left hand side of the inequality in Expression~\ref{eq:b_ex}.
 	
-Then $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} = - \frac{\partial}{\partial e} \left( \frac{\partial F_\ga (Z(\bta,\tad))}{\partial \ga(\cdot)} \right) = 
-	   - f_\ga \frac{\partial^2 Z(\bta,\tad)}{\partial \ga(\cdot) \partial e} - \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} \frac{\partial f_\ga}{\partial e} = - \frac{\partial Z(\bta,\tad)}{\partial \ga(\cdot)} \frac{\partial f_\ga}{\partial e} $
-where the above equality holds because $Z(\bta,\tad)$ does not depend on $e$.
+Then $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} = - \frac{\partial}{\partial e} \left( f_\ta(\ta) \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)} \right) = 
+	   - f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial \ga(\cdot) \partial e} - \frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)} \frac{\partial f_\ta}{\partial e} = - f_\ta(\ta) \frac{\partial^2 h^{-1}(\ga,e)}{\partial \ga(\cdot) \partial e} $
+where the above equality holds because the pdf of $\ta$ does not depend on $e$. When $\ga(\cdot)$ shifts up, $\frac{\partial h^{-1}(\ga,e)}{\partial \ga(\cdot)}$ becomes less negative, so $\frac{\partial^2 r}{\partial e \partial \ga(\cdot)} \leq 0$.
 
-The proof of Lemma~\ref{res:pi_dir} shows that $\frac{\partial Z(\bta,\tad)}{\partial \pi(\cdot)}$ has the opposite sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$. When $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$ is weakly positive (negative), $\frac{\partial f_\ga}{\partial e} \geq 0$ implies that $\frac{\partial^2 r}{\partial e \partial \pi(\cdot)} \geq 0 \ \left(\leq 0\right)$. Thus $\frac{\partial e}{\partial \pi(\cdot)}$ has the same sign as $\frac{\partial }{\partial \pi(\cdot)} \left[\pi_X(\tad) - \pi_X(\tau^a) \right]$.  $\hfill\blacksquare$
+$\hfill\blacksquare$
 
 
 
