@@ -73,15 +73,17 @@
 \begin{itemize}[<+->]
 	\item Temporary trade barriers have potential to be renewed
 		\begin{itemize}
-			\item For Anti-dumping (AD) duties, initial five year term, renewal for five years
-			\item For Safeguards, four then four; much rarer than AD
+			\item For anti-dumping (AD) duties, initial five year term, renewal for five years
+			\item For safeguards, four then four; much rarer than AD
 		\end{itemize}
-	\item Authorized by WTO
-	\item Agreements / litigation provide a LOT of latitude
 	\item In U.S., for AD:
 		\begin{itemize}
 			\item DOC initiates, determines whether dumping would continue
 			\item ITC determines whether injury would recur / continue
+		\end{itemize}
+	\item Authorized by WTO
+		\begin{itemize}
+			\item Agreements / litigation provide a LOT of latitude
 		\end{itemize}
 \end{itemize}
 \end{frame}
@@ -93,12 +95,11 @@
 The probability that AD duties gets renewed
 \pause
 \begin{itemize}[<+->]
-	\item increases in lobbying effort
-	\item decreases in the MFN tariff
 	\item is invariant to the trading partner's tariff
+	\item decreases in the MFN tariff
+	\item increases in lobbying effort	
 	\item increases in the profitability of the import-competing sector
-	\item increases in the strength of the lobby
-	\item AD duties: complicated
+	\item strength of the lobby and AD duties: complicated
 \end{itemize}
 \end{frame}
 
@@ -180,17 +181,18 @@ Non-tradable specific factors motivates political activity
 In Home country (foreign is passive):
 \pause
 \begin{itemize}[<+->]
-	\item Dept. of Commerce / Int'l Trade Commission ($G$)
-		\begin{itemize}[<+->]
-			\item Can renew AD duties
-			\item Susceptible to influence of lobbying, perhaps both direct and indirect
-			\item Modeled in reduced form
-		\end{itemize}
-%\pause
-	\item A Single Lobby
+	\item Lobby
 		\begin{itemize}
 			\item Represents import-competing sector, $X$
 		\end{itemize}	
+	\item Dept. of Commerce / Int'l Trade Commission ($G$)
+		\begin{itemize}[<+->]
+			\item Can renew AD duties
+			\item Susceptible to influence of lobbying, perhaps both directly and indirectly
+			\item Modeled in reduced form
+		\end{itemize}
+%\pause
+	
 \end{itemize}
 
 \end{frame}
@@ -235,10 +237,11 @@ Renewal decision determined by complex process including DOC, ITC, pressure via 
 
 \pause
 \vskip.2in
-\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Assumption 1}
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Assumptions}
 \begin{enumerate}
   \pause
 	\item $\ga(e,\ta)$ is increasing and concave in $e$ for all $\ta \in \Theta$.
+	\item $\ga(e,\ta)$ is increasing in $\ta$.
 \end{enumerate}
 \end{beamerboxesrounded}
 \end{frame}
@@ -318,7 +321,7 @@ Lobby chooses effort to maximize:
 \begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Assumption 2}
 \begin{enumerate}
   \pause
-	\item $\ta$ is uniformly distributed on some $\Theta=\left[\underline{\ta},\overline{\ta}\right]$.
+	\item   The pdf of the induced distribution on $\ga(e,\ta)$ is weakly increasing in $e$.
 \end{enumerate}
 \end{beamerboxesrounded}
 
@@ -354,7 +357,7 @@ Lobby chooses effort to maximize:
 
 \pause
 \vskip.25in
-\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Lemma 3}
+\begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Lemma}
   The probability that $G$ renews AD duties is increasing and concave in lobbying effort $e$ $\left(\text{i.e. } \frac{\partial r}{\partial e} \geq 0, \ \frac{\partial^2 r}{\partial e^2} \leq 0  \right)$.
 \end{beamerboxesrounded}
 
@@ -399,11 +402,11 @@ When $\tau^{\textit{ad}}$ increases, direct effect is negative: social welfare d
 
 \vskip.2in
 \pause
-Indirect effect is positive: higher $\tau^{\textit{ad}}$ increases incentive to exert lobbying effort
+Indirect effect is ambiguous: higher $\tau^{\textit{ad}}$ can increase or decrease incentive to exert lobbying effort
 
 \vskip.2in
 \pause
-Magnitudes are not directly comparable
+	The total probability that $G$ renews AD duties only increases if indirect effect is positive / large enough to outweigh direct effect.
 \begin{itemize}
 	\item Work in progress: endogenize $\tau^{\textit{ad}}$
 \end{itemize}
@@ -415,17 +418,17 @@ Magnitudes are not directly comparable
 \begin{frame}{Exogenous Shifts in $\ga(e,\ta)$}
 
 \pause
-Assume $\ga(\cdot,\cdot)$ increases weakly for all $(e,\ta)$ pairs.
+Assume $\ga(\cdot,\cdot)$ increases weakly for all $(e,\ta)$ pairs
 \pause
 \begin{itemize}[<+->]
 	\item $G$ gives more weight to firms' benefit
-	\item Lobbying incentives are unchanged
+	\item Lobbying incentives are muted
 \end{itemize}
 
 \vskip.25in
 \pause
 \begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Result 4}
-  The total probability that $G$ renews AD duties increases when the weighting function shifts up exogenously.
+  The total probability that $G$ renews AD duties increases when the weighting function shifts up exogenously if the direct effect dominates.
 \end{beamerboxesrounded}
 \end{frame}
 
