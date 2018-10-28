@@ -213,6 +213,38 @@ This is simple because there's only one lobby, action in only one country
 	\item Or in a three-country model: third country benefits from discrimination against foreign $\left( * \right)$
 \end{itemize}
 
+\subsection{Lobbying for the level of $\tau^{AD}$}
+This is a four-stage game. The lobby chooses $e^{AD}$ to affect the level of $\tau^{AD}$. Then the ITC chooses $\tau^{AD}$. Then the lobby chooses $e$ to affect the ITC's decision to renew $\tau^{AD}$ or go back to $\tau^a$ and finally the ITC decides whether or not to renew the anti-dumping duties.
+\begin{itemize}
+	\item ITC's decision to renew the anti-dumping duty or not is a function of lobby's choice of $e \ \left(\frac{\partial r}{\partial e} \neq 0\right)$, it's own $\tau^{ad} \ \left(\frac{\partial r}{\partial \tau^{ad}} \neq 0\right)$, and exogenous $\tau^a, \ga$, and $\pi \ \left(\frac{\partial r}{\partial \tau^a} \neq \frac{\partial r}{\partial \ga} \neq \frac{\partial r}{\partial \pi} \neq  0\right)$:
+		\[
+		  \frac{\partial r}{\partial e} \frac{\partial e}{\partial \tau^a} + \frac{\partial r}{\partial \tau^a} + \left[ \frac{\partial r}{\partial e} \frac{\partial e}{\partial \tau^{ad}} + \frac{\partial r}{\partial \tau^{ad}}\right] \frac{\partial \tau^{ad}}{\partial \tau^a} + \left[ \frac{\partial r}{\partial e} \frac{\partial e}{\partial \tau^{ad}} + \frac{\partial r}{\partial \tau^{ad}}\right] \frac{\partial \tau^{ad}}{\partial e^{ad}} \frac{\partial e^{ad}}{\partial \tau^a}
+		\]
+		Where the first three terms are, respectively
+			\begin{itemize}
+				\item the impact of the lobby's effort decision on the ITC's renew (break) decision
+				\item the direct effect of the change in $\tau^a$ on the lobby's effort decision
+				\item the direct effect of the change in $\tau^a$ on the ITC's break decision
+			\end{itemize}
+	\item The lobby makes its decision $e$ as a function of $\tau^{ad} \ \left(\frac{\partial e}{\partial \tau^{ad}} \neq 0\right)$, and exogenous $\tau^a, \ga$, and $\pi \ \left(\frac{\partial e}{\partial \tau^a} \neq \frac{\partial e}{\partial \ga} \neq \frac{\partial e}{\partial \pi} \neq  0\right)$
+		\begin{itemize}
+			\item The lobby cares that $e$ has an impact on $r$
+			\item This is noted by $\frac{\partial r}{\partial e} \neq 0$
+		\end{itemize}
+	\item If the ITC sets $\tau^{ad}$ in a vacuum, then $\tau^{ad}$ is a function of exogenous $\tau^a, \ga$, and $\pi \ \left(\frac{\partial \tau^{ad}}{\partial \tau^a} \neq \frac{\partial \tau^{ad}}{\partial \ga} \neq \frac{\partial \tau^{ad}}{\partial \pi} \neq  0\right)$
+		\begin{itemize}
+			\item ITC cares that $\tau^{ad}$ has an impact on $e \ \left( \frac{\partial e}{\partial \tau^{ad}} \neq 0 \right)$
+			\item ITC cares that $\tau^{ad}$ has an impact on $r \ \left( \frac{\partial r}{\partial \tau^{ad}} \neq 0, \text{ i.e. } \frac{\partial r}{\partial e}\frac{\partial e}{\partial \tau^{ad}} \neq 0\right)$
+		\end{itemize}
+	\item Now lobby chooses $e^{ad}$ to influence $\tau^{ad}$. Then $e^{ad}$ is a function of exogenous $\tau^a, \ga$, and $\pi \ \left(\frac{\partial e^{ad}}{\partial \tau^a} \neq \frac{\partial e^{ad}}{\partial \ga} \neq \frac{\partial e^{ad}}{\partial \pi} \neq  0\right)$
+		\begin{itemize}
+			\item UH OH! I forgot that $e^{ad}$ influences all sorts of things above. Have to fix!
+			\item lobby cares that $e^{ad}$ has an impact on $\tau^{ad} \ \left( \frac{\partial \tau^{ad}}{\partial e^{ad}} \neq 0 \right)$
+			\item lobby cares that $e^{ad}$ has an impact on $e \ \left( \frac{\partial e}{\partial \tau^{ad}} \frac{\partial \tau^{ad}}{\partial e^{ad}} \neq 0 \right)$
+			\item lobby cares that $e^{ad}$ has an impact on $r \ \left( \frac{\partial r}{\partial e^{ad}} \neq 0, \text{ i.e. } \frac{\partial r}{\partial e}\frac{\partial e}{\partial \tau^{ad}} \frac{\partial \tau^{ad}}{\partial e^{ad}} \neq 0\right)$
+		\end{itemize}
+\end{itemize}
+
 \vskip.5in
 Notes
 \begin{enumerate}
